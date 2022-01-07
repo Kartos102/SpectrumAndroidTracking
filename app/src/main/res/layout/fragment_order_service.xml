@@ -1,0 +1,1000 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jo.spectrumtracking.fragment.OrderServiceFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_weight="1"
+        card_view:cardElevation="@dimen/dimen_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_swipe"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="@dimen/dimen_8"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/order_service_recycler_width"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include
+                            layout="@layout/recyclerview_header_order_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_order_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_2"
+                            android:layout_marginBottom="@dimen/dimen_2"
+                            android:background="@color/white" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <include
+                                    layout="@layout/recyclerview_footer_order_service"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/order_service_btn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_15"
+                                        android:layout_marginBottom="@dimen/dimen_15"
+                                        android:text="@string/click_here_about_plan_details"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/color5"
+                                        android:textSize="18sp" />
+
+                                    <WebView
+                                        android:id="@+id/order_service_webview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2048dp" />
+
+                                </LinearLayout>
+
+                                <!-- <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dimen_10"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="#123051"
+                                            android:text="Personal Economy"
+                                            android:textAlignment="center"
+                                            android:textColor="#f96f00"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="$9.95/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:lines="2"
+                                            android:text="Annual Plan: \n $08.30/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="60 s Update Interval"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="1 Month History Data"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        &lt;!&ndash;     <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Geofencing Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Speeding Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Harsh Break Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>&ndash;&gt;
+                                        <View
+                                            android:id="@+id/view5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="10 Text Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="Unlimited Email \n Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view13"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+                                        &lt;!&ndash;   <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Vehicle Health \n Report"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Fuel/Mileage Report"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>&ndash;&gt;
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="#123051"
+                                            android:text="Personal Premium"
+                                            android:textAlignment="center"
+                                            android:textColor="#f96f00"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="$12.95/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:lines="2"
+                                            android:text="Annual Plan: \n $10.75/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="30 s Update Interval"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="1 Month History Data"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        &lt;!&ndash;    <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Geofencing Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Speeding Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Harsh Break Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>&ndash;&gt;
+                                        <View
+                                            android:id="@+id/view11"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="30 Text Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view12"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="Unlimited Email \n Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view14"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        &lt;!&ndash;   <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/dimen_2"
+                                        android:layout_marginLeft="@dimen/dimen_5"
+                                        android:layout_marginRight="@dimen/dimen_5"
+                                        android:background="@color/white"
+                                        android:text="Vehicle Health \n Report"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="@dimen/dimen_5"
+                                        android:layout_marginRight="@dimen/dimen_5"
+                                        android:background="@color/gray" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/dimen_2"
+                                        android:layout_marginLeft="@dimen/dimen_5"
+                                        android:layout_marginRight="@dimen/dimen_5"
+                                        android:background="@color/white"
+                                        android:text="Fuel/Mileage Report"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black" />&ndash;&gt;
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="#123051"
+                                            android:text="Business Economy"
+                                            android:textAlignment="center"
+                                            android:textColor="#f96f00"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="$14.95/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view15"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:lines="2"
+                                            android:text="Annual Plan: \n $12.45/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view16"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="60 s Update Interval"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view17"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="12 Months Data"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        &lt;!&ndash;    <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Geofencing Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Speeding Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Harsh Break Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>&ndash;&gt;
+                                        <View
+                                            android:id="@+id/view18"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="45 Text Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view19"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="Unlimited Email \n Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view20"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+                                        &lt;!&ndash;          <TextView
+                                               android:layout_width="fill_parent"
+                                               android:layout_height="wrap_content"
+                                               android:textAlignment="center"
+                                               android:text="Vehicle Health \n Report"
+                                               android:textColor="@color/black"
+                                               android:background="@color/white"
+                                               android:layout_marginLeft="@dimen/dimen_5"
+                                               android:layout_marginRight="@dimen/dimen_5"
+                                               android:layout_marginBottom="@dimen/dimen_2"/>
+                                           <View
+                                               android:layout_width="match_parent"
+                                               android:layout_height="1dp"
+                                               android:background="@color/gray"
+                                               android:layout_marginLeft="@dimen/dimen_5"
+                                               android:layout_marginRight="@dimen/dimen_5"/>
+                                           <TextView
+                                               android:layout_width="fill_parent"
+                                               android:layout_height="wrap_content"
+                                               android:textAlignment="center"
+                                               android:text="Fuel/Mileage Report"
+                                               android:textColor="@color/black"
+                                               android:background="@color/white"
+                                               android:layout_marginLeft="@dimen/dimen_5"
+                                               android:layout_marginRight="@dimen/dimen_5"
+                                               android:layout_marginBottom="@dimen/dimen_2"/>&ndash;&gt;
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="#123051"
+                                            android:text="Business Premium"
+                                            android:textAlignment="center"
+                                            android:textColor="#f96f00"
+                                            android:textSize="18sp" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="$17.95/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view21"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:lines="2"
+                                            android:text="Annual Plan: \n $14.75/month"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view22"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="30 s Update Interval"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view23"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="12 Months Data"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        &lt;!&ndash;   <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Geofencing Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Speeding Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>
+                                 <View
+                                     android:layout_width="match_parent"
+                                     android:layout_height="1dp"
+                                     android:background="@color/gray"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"/>
+                                 <TextView
+                                     android:layout_width="fill_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textAlignment="center"
+                                     android:text="Harsh Break Alert"
+                                     android:textColor="@color/black"
+                                     android:background="@color/white"
+                                     android:layout_marginLeft="@dimen/dimen_5"
+                                     android:layout_marginRight="@dimen/dimen_5"
+                                     android:layout_marginBottom="@dimen/dimen_2"/>&ndash;&gt;
+                                        <View
+                                            android:id="@+id/view24"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="60 Text Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view25"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/white"
+                                            android:text="Unlimited Email \n Alerts"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/darkGray" />
+
+                                        <View
+                                            android:id="@+id/view26"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"
+                                            android:background="@color/gray" />
+                                        &lt;!&ndash;       <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:text="Vehicle Health \n Report"
+                                            android:textColor="@color/black"
+                                            android:background="@color/white"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"/>
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="1dp"
+                                            android:background="@color/gray"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"/>
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:text="Fuel/Mileage Report"
+                                            android:textColor="@color/black"
+                                            android:background="@color/white"
+                                            android:layout_marginLeft="@dimen/dimen_5"
+                                            android:layout_marginRight="@dimen/dimen_5"
+                                            android:layout_marginBottom="@dimen/dimen_2"/>&ndash;&gt;
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>-->
+
+
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <TextView
+                            android:id="@+id/txt_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_10" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btn_proceed_to_checkout"
+                style="@style/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/roundedbutton_blue1"
+                android:text="@string/proceed_to_check_out"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="@dimen/dimen_5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_plan_comment"
+            android:textColor="@color/white" />
+    </RelativeLayout>-->
+
+
+</LinearLayout>

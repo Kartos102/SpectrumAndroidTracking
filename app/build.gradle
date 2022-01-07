@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.jo.gps.spectrumtracking"
+        minSdkVersion 21
+        targetSdkVersion 29
+        multiDexEnabled true
+        versionCode 17
+        versionName "1.0.17"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'androidx.exifinterface:exifinterface:1.1.0'
+    compile 'us.belka:androidtoggleswitch:1.2.2'
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.1.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:4.9.0'
+    //implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.8.2'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-gestures:0.7.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.6.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.maps:google-maps-services:0.2.11'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
+    ////////////////////////////////////////////////////////////////
+    implementation 'com.google.android.gms:play-services-plus:17.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+
+    // Dependencies for the REST API example
+    implementation 'com.google.api-client:google-api-client:1.22.0'
+    implementation 'com.google.api-client:google-api-client-android:1.22.0'
+    implementation 'com.google.apis:google-api-services-people:v1-rev139-1.22.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.carlonzo.stikkyheader:core:0.0.3-SNAPSHOT'
+    // UiAutomatorTesting
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
+    androidTestImplementation 'androidx.annotation:annotation:1.1.0'
+    androidTestImplementation 'com.google.code.findbugs:jsr305:3.0.2'
+    // implementation 'com.github.VenkatramanRajagopalan:DateRangePicker:2.1'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.github.MSF-Jarvis:AppRate:1.3'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.github.pratikbutani:MultiSelectSpinner:f47c0dadea'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //GoogleAPI
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    //Dexter for permission
+    implementation 'com.karumi:dexter:6.0.1'
+
+    implementation 'com.github.AppIntro:AppIntro:4.2.3'
+//    implementation 'com.twilio:chat-android-with-symbols:5.0.1'
+    implementation 'com.twilio:chat-android:6.1.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
+
+    implementation platform('com.google.firebase:firebase-bom:26.6.0')
+    implementation 'com.google.firebase:firebase-messaging'
+//    compile 'cn.pedant.sweetalert:library:1.2'
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    compile 'com.github.thuat26:CustomGaugeView:1.0'
+    implementation 'com.github.Pygmalion69:Gauge:1.5.2'
+}

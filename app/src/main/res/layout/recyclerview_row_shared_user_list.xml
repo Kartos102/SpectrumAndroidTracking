@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_5"
+    android:paddingTop="@dimen/dimen_3"
+    android:paddingRight="@dimen/dimen_5"
+    android:paddingBottom="@dimen/dimen_3">
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/check_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:buttonTint="@color/monitor_top"
+        android:theme="@style/MyCheckbox" />
+</LinearLayout>

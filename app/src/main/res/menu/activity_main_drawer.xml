@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_activate_tracker"
+            android:icon="@drawable/ic_activate_tracker"
+            android:title="Activate Tracker"
+            />
+        <item
+            android:id="@+id/drawer_monitor"
+            android:icon="@drawable/ic_monitor"
+            android:title="Monitor"
+            />
+        <item
+            android:id="@+id/drawer_replay"
+            android:icon="@drawable/ic_replay"
+            android:title="Replay"
+            />
+        <item
+            android:id="@+id/drawer_reports"
+            android:icon="@drawable/ic_reports"
+            android:title="Reports"
+            />
+        <item
+            android:id="@+id/drawer_geofence"
+            android:icon="@drawable/ic_geofence"
+            android:title="Geofence"
+            />
+        <item
+            android:id="@+id/drawer_alarms"
+            android:icon="@drawable/ic_alarm"
+            android:title="Set Alarms"
+            />
+        <item
+            android:id="@+id/drawer_events"
+            android:icon="@drawable/ic_alarm"
+            android:title="Alarms"
+            />
+        <item
+            android:id="@+id/drawer_order_tracker"
+            android:icon="@drawable/ic_order_tracker"
+            android:title="Order Tracker"
+            android:enabled="false"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/drawer_order_service"
+            android:icon="@drawable/ic_order_service"
+            android:title=""
+            />
+
+
+        <item
+            android:id="@+id/drawer_update_driver_info"
+            android:icon="@drawable/ic_update_driver_info"
+            android:title="Vehicle Info"
+            />
+
+    </group>
+
+   <!-- <item
+        android:id="@+id/drawer_update_credit_card"
+        android:icon="@drawable/ic_update_credit_card"
+        android:title="Credit card" />-->
+    <item
+        android:id="@+id/drawer_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log out" />
+
+
+</menu>

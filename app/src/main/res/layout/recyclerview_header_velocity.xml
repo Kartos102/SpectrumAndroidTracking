@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#6c7ae0"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/plate"
+        android:textAlignment="center"
+
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/darkGray" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:text="@string/status"
+
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/darkGray" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:text="@string/speed"
+
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/darkGray" />
+
+    <!--
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:text="@string/voltage"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#f96f00"
+
+        android:textSize="12sp" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/darkGray" />
+-->
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:text="@string/expiration"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+
+        android:textSize="16sp" />
+
+
+    <!--  <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/darkGray" />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.7"
+          android:text="Speeding"
+          android:textAlignment="center"
+          android:textColor="@color/color5"
+          android:background="#0e2c51"
+          android:textSize="12sp" />
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/darkGray" />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.7"
+          android:text="Harsh Acce"
+          android:textAlignment="center"
+          android:textColor="@color/color5"
+          android:background="#0e2c51"
+          android:textSize="12sp" />
+
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@color/darkGray" />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.7"
+          android:text="Harsh Dece"
+          android:textAlignment="center"
+          android:textColor="@color/color5"
+          android:background="#0e2c51"
+          android:textSize="12sp" />
+  -->
+    <!--<View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/darkGray" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Last Start"
+        android:textAlignment="center"
+        android:textColor="@color/color5"
+        android:background="#0e2c51"
+        android:textSize="12sp" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/darkGray" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Last Stop"
+        android:textAlignment="center"
+        android:textColor="@color/color5"
+        android:background="#0e2c51"
+        android:textSize="12sp" />-->
+</LinearLayout>

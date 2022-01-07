@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#F96F00</color>
+
+    <color name="main">#F96F00</color>
+    <color name="btn_disabled">#9B9999</color>
+    <color name="monitor_top">#008EFB</color>
+    <color name="color5">#E74C3C</color>
+    <color name="color6">#3498DB</color>
+    <color name="color11">#dc7d51</color>
+    <color name="main_color_sim">#008EFB</color>
+
+    <color name="barChartColor1">#FF0066</color>
+    <color name="barChartColor2">#0000FF</color>
+
+    <color name="barChartBorderColor">#FF0066</color>
+
+    <color name="pieChart1">#3e95cd</color>
+    <color name="pieChart2">#8E5EA2</color>
+    <color name="pieChart3">#3cba9f</color>
+    <color name="pieChart4">#e8c3b9</color>
+    <color name="pieChart5">#c45850</color>
+    <color name="pieChart6">#0000FF</color>
+    <color name="pieChart7">#FFFF00</color>
+    <color name="pieChart8">#FF0000</color>
+
+    <color name="lineChartBackgroundColor">#FF0066</color>
+    <color name="borderColor">#FF0066</color>
+    <color name="anthracite">#2B292E</color>
+    <color name="orangeRed">#FF4500</color>
+    <color name="green">#008000</color>
+    <color name="oldpink">#ec867b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="darkGray">#777777</color>
+    <color name="color_laststart">#008F00</color>
+    <color name="color_laststop">#FF2600</color>
+    <color name="color_trip">#FF40FF</color>
+    <color name="dateTextColor">#652698</color>
+    <color name="menu_select_color">#008EFB</color>
+    <color name="menu_normal_color">#777777</color>
+    <color name="card_back">#F3F3FD</color>
+    <color name="replay_divide_line">#652698</color>
+    <color name="bottom_scroll_background">#fde4fd</color>
+    <color name="table_header_text_color">#555555</color>
+    <color name="table_header_bg_color">#f5f5f5</color>
+    <color name="table_header_bg_black_color">#000000</color>
+    <color name="order_summary_text_color">#153643</color>
+    <color name="order_summary_block_bg_color">#F1F1F1</color>
+    <color name="text_dark_blue_color">#0e2c51</color>
+
+</resources>

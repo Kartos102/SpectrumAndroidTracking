@@ -1,0 +1,363 @@
+<resources>
+    <string name="app_name">Spectrum Tracker</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="hint_password">Password at least 8 characters</string>
+    <string name="user_password">Password</string>
+
+    <string name="hint_verify">Password Reset Code</string>
+    <string name="hint_verify_code">Verification Code</string>
+    <string name="hint_username">Username</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_google_login">Google login</string>
+    <string name="btn_facebook_login">Facebook login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="copyright">
+           <![CDATA[
+        <p class="">Copyright &commat; 2021 Spectrum Tracking &nbsp;|&nbsp; All rights reserved &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Legal.html">Terms of Service</a></p>
+
+        ]]>
+    </string>
+    <string name="activation_description">
+           <![CDATA[
+                <p>1. Put the <font color="#008EFB">SPECTRUMID</font> into the box below.</p>
+                <p>2. For OBD tracker, plug the tracker into the OBD II port. <font color="#008EFB"><a href="https://www.carmd.com/wp/locating-the-obd2-port-or-dlc-locator/" color="#008EFB" style="text-decoration: none;">CLICK HERE</a></font> to locate OBD port. For portable tracker, fully charge your device for 2-3 hours.</p>
+                <p>3. Drive your car for 5-10 minutes to get GPS location. Portable one can take up to 10 minutes when it is used the first time.\n</p>
+                <p>4. Demo video here <font color="#008EFB"><a href="https://spectrumtracking.com/video.html" color="#008EFB" style="text-decoration: none;">CLICK HERE</a></font> </p>
+
+        ]]>
+    </string>
+    <string name="dialog_activation_success_message_1">
+           <![CDATA[
+                <ol>
+                <li> If your device has WiFi, the WiFi name and password are on the box.</li>
+                <li> You must order WiFi data to use WiFi</li>
+                </ol>
+        ]]>
+    </string>
+    <string name="order_service_description">
+           <![CDATA[
+                <ul style="line-height: 2">
+                   <li> &nbsp; Both a WiFi plan and a Tracking plan are required to use the OBD hotspot </li>
+                   <li> &nbsp; You can order WiFi plan at any time </li>
+                   <li> &nbsp; WiFi data is valid for a month from the date of purchase </li>
+                   <li> &nbsp; Unused WiFi data will not rollover</li>
+                   <li> &nbsp; When you use all purchased WiFi data the WiFi name will not show </li>
+                   <li> &nbsp; WiFi will not show when engine is off </li>
+                   <li> &nbsp; By default WiFi plan is not auto renewed. Contact us if you want to have an auto renewed WiFi plan </li>
+                </ul>
+        ]]>
+    </string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password_confirm">Confirm New Password</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_verify">Submit</string>
+    <string name="btn_reset">Reset Password</string>
+
+    <string name="back">Back</string>
+    <string name="request_password">"REQUEST\nPASSWORD"</string>
+    <string name="cancel">CANCEL</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout">"Check out"</string>
+    <string name="price">"price:"</string>
+    <string name="per_item">" per item"</string>
+    <string name="remove">Remove</string>
+    <string name="tacker_id">Spectrum ID</string>
+    <string name="spectrum_id_4_8_letters">SpectrumID: 4-8 letters long</string>
+    <string name="vehicle_name">VEHICLE NAME</string>
+    <string name="driver_name">Driver</string>
+    <string name="driver_country">TRACKER LOCATION</string>
+    <string name="activate">Activate</string>
+    <string name="service_plan_comment">"All new trackers include a free month service. Service plans can be renewed 2 weeks before the expiration date. LTE Data will NOT roll over to next period."</string>
+    <string name="name">Name</string>
+    <string name="expiration_date">"Expiration"</string>
+    <string name="expiration_date_title">Expiration date</string>
+    <string name="service_plan">Tracking Plan</string>
+    <string name="lte_data">WiFi Plan</string>
+    <string name="auto_renew">Auto Renew</string>
+    <string name="no_auto_renew">No Auto Renew</string>
+    <string name="proceed_to_check_out">Check out</string>
+    <string name="title_activity_update_credit_card">UpdateCreditCardActivity</string>
+    <string name="update_credit_card">Update Credit Card</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="title_activity_update_driver_info">UpdateDriverInfoActivity</string>
+    <string name="cv_code">Security code</string>
+    <string name="card_number">Card number</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="update_driver_information">Update Driver Information</string>
+    <string name="driver_name_label">"Driver Name: "</string>
+    <string name="driver_phone_label">"Driver Phone: "</string>
+    <string name="vehicle_name_label">"Vehicle Name: "</string>
+    <string name="plate_number_label">"Plate Number: "</string>
+
+    <string name="btn_update">Update</string>
+    <string name="forget_password_dialog_header">Enter your email address to get password reset code</string>
+    <string name="before_tax">Before Tax</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="place_your_order">Place Order</string>
+    <string name="city">CITY</string>
+    <string name="street_address">STREET ADDRESS</string>
+    <string name="state">State</string>
+    <string name="zip">Zip code</string>
+    <string name="billing_information">Billing Information</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="okay">Okay</string>
+    <string name="label_service_plan">Service Plan:</string>
+    <string name="label_lte_plan">LTE Plan:</string>
+    <string name="label_tax">Tax:</string>
+    <string name="label_total">Total:</string>
+    <string name="label_time">Time:</string>
+    <string name="activity_label_checkout">Checkout</string>
+    <string name="options">Select Vehicle</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="phone">Phone</string>
+    <string name="search">Search</string>
+    <string name="please_wait">Please wait</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="load_replay">Load Replay</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="load_report">Report</string>
+    <string name="title_activity_shipping_address">ShippingAddressActivity</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="email">Email</string>
+    <string name="street_address_lowercase">Street Address</string>
+    <string name="city_lowercase">City</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="state_lowercase">State</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="plate_number">Plate Number</string>
+    <string name="vehicle_year">VEHICLE YEAR</string>
+    <string name="last_online_time">Online</string>
+    <string name="expiration_date_">Expiration</string>
+    <string name="speed">Speed</string>
+    <string name="contact_us">Contact us</string>
+    <string name="contact_mail">contact@spectrumtracking.com</string>
+<!--    <string name="google_api_key">AIzaSyAtSXpMD58Xr0ejb4KoiUwFG2T2pvBes8k</string>-->
+
+
+    <string-array name="cuntry_arrays">
+        <item>USA</item>
+        <item>Canada or Mexico</item>
+        <item>Other Countries</item>
+    </string-array>
+    <string name="on_the_box">4-8 letters long</string>
+    <string name="card_expiry">Expiration Date</string>
+    <string name="driver_color_label">Color</string>
+    <string name="driver_autorenew_label">Auto Renew</string>
+    <string name="dialog_activate_success_message">Congratulations! Your tracker is now activated. Please wait for 5 minutes for the tracker to start. If it does not show on the map, unplug the tracker from the OBD port and then plug it back  to reset the device. Contact contact@spectrumtracking.com for assistance.</string>
+    <string name="title_activity_get_photo">getPhotoActivity</string>
+    <string name="gps_is_enabled_required">GPS is enabled (Required)</string>
+    <string name="location_permission_required">Location Permission (Required)</string>
+    <string name="battery_optimization_is_disabled_optional">Battery Optimization is disabled (Optional)</string>
+    <string name="change_setting">Change Setting</string>
+    <string name="next">Next</string>
+    <string name="remember_me">Remember me</string>
+    <string name="monitor">Monitor</string>
+    <string name="replay">Replay</string>
+    <string name="report">Report</string>
+    <string name="setting">Setting</string>
+    <string name="click_disable_battery_optimization_from_previous_panel">Click Disable Battery Optimization from previous panel.</string>
+    <string name="tap_not_optimized_dropdown_menu">Tap Not Optimized dropdown menu.</string>
+    <string name="tap_all_apps">Tap All apps.</string>
+    <string name="find_spectrum_tracker_app">Find Spectrum Tracker app.</string>
+    <string name="turn_off_optimized_switch">Turn off optimized switch.</string>
+    <string name="we_recommend_to_turn_off_batter_optimization_for_spectrum_tracking_app_if_you_track_your_phone">We recommend to turn off batter optimization for Spectrum Tracking app if you track your phone.</string>
+    <string name="disable_battery_optimization">Disable battery optimization</string>
+    <string name="show_me_how">Show me how</string>
+    <string name="skip">Skip</string>
+    <string name="invite_friend_to_chat">Invite friend to chat</string>
+    <string name="log_out">Log Out</string>
+    <string name="remember_account_on_this_device">Remember account on this device?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="chat_invitation">Chat Invitation</string>
+    <string name="update_vehicle">Update Vehicle</string>
+    <string name="data_plan">Data Plan</string>
+    <string name="text_alert">Text Alert</string>
+    <string name="_10_digits_phone_number">10 digits phone number</string>
+    <string name="email_alert">Email Alert</string>
+    <string name="email_address">email address</string>
+    <string name="sound_alert">Sound Alert</string>
+    <string name="vibration_alert">Vibration Alert</string>
+    <string name="save">Save</string>
+    <string name="speeding_mph">Speeding [mph]</string>
+    <string name="harsh_turn">Harsh Turn</string>
+    <string name="unplug_device">Unplug Device</string>
+    <string name="harsh_accel">Harsh Accel</string>
+    <string name="engine_on">Engine On</string>
+    <string name="engine_off">Engine Off</string>
+    <string name="geofence">Geofence</string>
+    <string name="airplane_mode">Airplane Mode</string>
+    <string name="invite">Invite</string>
+    <string name="fence_name">Fence Name</string>
+    <string name="double_click_to_finish_drawing">Double click to finish drawing</string>
+    <string name="draw_geofence">Draw geofence</string>
+    <string name="date">Date</string>
+    <string name="event">Event</string>
+    <string name="address">Address</string>
+    <string name="click_here_about_plan_details">Click here about plan details</string>
+    <string name="total_stops">Total Stops</string>
+    <string name="mileage">Mileage</string>
+    <string name="total_fuel">Total Fuel</string>
+    <string name="average_trip">Average Trip</string>
+    <string name="vehicle_battery">Vehicle Battery</string>
+    <string name="idling">Idling</string>
+    <string name="max_speed">Max Speed</string>
+    <string name="slide_on_off_to_show_hide_family_and_friends_location">slide on/off to show/hide family and friends location</string>
+    <string name="no_shared_device">No Shared Device</string>
+    <string name="keep_screen_on">Keep Screen On</string>
+    <string name="track_my_phone">Track my phone</string>
+    <string name="time_interval_to_track_phone_s">Time interval to track phone(s)</string>
+    <string name="set_alarms">Set Alarms</string>
+    <string name="set_geofence">Set Geofence</string>
+    <string name="order_service">Order Service</string>
+    <string name="faq">FAQ</string>
+    <string name="battery_optimisation_settings">Battery Optimisation Settings</string>
+    <string name="we_recommend_that_you_turn_off_battery_optimization_for_spectrum_tracking_app_if_you_use_phone_tracking">We recommend that you turn off battery optimization for spectrum tracking app if you use phone tracking</string>
+    <string name="activate_tracker">Activate Tracker</string>
+    <string name="enter_an_email_in_the_box_and_click_the_share_button_to_invite_family_and_friends_to_share_your_location">Enter an email in the box and click the share button to invite family and friends to share your location</string>
+    <string name="not_shared_user">Not Shared User</string>
+    <string name="select_all">Select All</string>
+    <string name="ok">OK</string>
+    <string name="current_weather">CURRENT WEATHER</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="click_for_address">click for address</string>
+    <string name="plate">Plate</string>
+    <string name="route">Route</string>
+    <string name="driver">Driver</string>
+    <string name="status">Status</string>
+    <string name="dataplan">Dataplan</string>
+    <string name="lte_plan">LTE Plan</string>
+    <string name="expiration">Expiration</string>
+    <string name="autorenew">autoRenew</string>
+    <string name="email_invitation_to_share">Email invitation to share</string>
+    <string name="share">Share</string>
+    <string name="select_users">Select Users</string>
+    <string name="unshare">Unshare</string>
+    <string name="day_trip">Day Trip</string>
+    <string name="month_trip">Month Trip</string>
+    <string name="year_trip">Year Trip</string>
+    <string name="last_start">Last Start</string>
+    <string name="speeding">Speeding</string>
+    <string name="rapid_accel">Rapid Accel</string>
+    <string name="hard_braking">Hard Braking</string>
+    <string name="last_stop">Last Stop</string>
+    <string name="alert">Alert</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="edit_vehicle_info">Edit Vehicle Info</string>
+    <string name="get_there">Get There</string>
+    <string name="share_your_location">Share your location</string>
+    <string name="chatting">Chatting</string>
+    <string name="voltage">Voltage</string>
+    <string name="main_events">Main Events</string>
+    <string name="add_device">Add Device</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="add_geofence">Add Geofence</string>
+    <string name="subscription">Subscription</string>
+    <string name="order_tracker">Order Tracker</string>
+    <string name="family_circle">Family Circle</string>
+    <string name="update_device">Update Device</string>
+
+    <string-array name="geofence_type">
+        <item>Circle</item>
+        <item>Polygon</item>
+    </string-array>
+
+    <string name="we_need_permissions_access_to_track_you">We need permissions access to track you and your family</string>
+    <string name="gps_disabled_in_your_device_would_you_like_enable">GPS is disabled in your device. Would you like to enable it?</string>
+    <string name="goto_setting_page_to_enable_gps">Goto Settings Page To Enable GPS</string>
+    <string name="please_enter_card_name">Please enter card name</string>
+    <string name="please_enter_card_number">Please enter card number</string>
+    <string name="please_enter_zip_code">Please enter zip code</string>
+    <string name="please_enter_state">Please enter state</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_expiration_date">Please enter expiration date</string>
+    <string name="please_enter_cv_code">Please enter CV code</string>
+    <string name="you_have_successfully_made_paymet">You have successfully made payment. The confirmation has been sent to your email</string>
+    <string name="weak_cell_signal">Weak cell phone signal is detected</string>
+    <string name="please_enter_username">Please enter username</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="password_confirm_does_not_match">Password confirm does not match</string>
+    <string name="press_back_agin_to_exit">Press Back again to Exit</string>
+    <string name="please_enter_verification_code">Please enter verification code</string>
+    <string name="reset_password_has_been_successfully">Reset Password has been successfully</string>
+    <string name="please_enter_street_address">Please enter street address</string>
+    <string name="please_enter_city">Please enter city</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="please_select_user_for_unshare">Please select user for unshare</string>
+    <string name="last_update">Last Update</string>
+    <string name="please_enter_tracker_id">Please enter tracker ID</string>
+    <string name="please_select_data_plan">Please select Data Plan</string>
+    <string name="expiration_date_format_is_wrong">Expiration date format is wrong. Use mmyy. For example, if expiration date is December 2030, use 1230</string>
+    <string name="please_choose_vehicle">Please choose vehicle</string>
+    <string name="use_valid_email_address">Use valid email address</string>
+    <string name="success">Success</string>
+    <string name="successfully_invited_to_join_chat">Successfully invited to join chat</string>
+    <string name="stop_drawing">Stop Drawing</string>
+    <string name="add_new_fence">Add new fence</string>
+    <string name="save_geofence">Save Geofence</string>
+    <string name="no_data_change_to_another_day">No Data. Change to another day</string>
+    <string name="__want_to_share_this_vehicle_information_with_you"> wants to share this vehicle information with you. Do you want show this vehicle?</string>
+    <string name="your_location_is_invalid">Your location is invalid</string>
+    <string name="update_success">Update success</string>
+    <string name="enable_your_gps_to_show_your_location">Enable your gps to show your location</string>
+    <string name="note">Note</string>
+    <string name="no_trip_change_to_another_day">No trip. Change to another day</string>
+    <string name="no_need_to_do_it_you_already_disabled_it">No need to do it, you already disabled it</string>
+    <string name="unshare_success">Unshare success</string>
+    <string name="retry_your_credit_card_if_still_not_working__">Retry your credit card. If still not working, please contact us for assistance</string>
+    <string name="distance">Distance</string>
+    <string name="this_week">This Week</string>
+    <string name="location_permission_description">This app collects location data to enable the following features: Geofence, Track My Phone, &amp; Get There even when the app is closed or not in use.</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="plate_number_optional">Plate Number (optional)</string>
+    <string name="driver_name_optional">Driver Name (optional)</string>
+    <string name="country">Country</string>
+    <string name="show_legend">SHOW LEGEND</string>
+    <string name="show_info">SHOW INFO</string>
+    <string name="hide_info">HIDE INFO</string>
+    <string name="share_location">Share Location</string>
+    <string name="clear">Clear</string>
+    <string name="circle">Circle</string>
+    <string name="polygon">Polygon</string>
+    <string name="fuel">Fuel</string>
+    <string name="battery">Battery</string>
+    <string name="wifi_data">WiFi Data</string>
+    <string name="rpm">RPM</string>
+    <string name="lbl_category">Category</string>
+    <string name="lbl_swipe"><![CDATA[swipe right to show more  >>>]]></string>
+    <string name="lbl_last_digits">Last 4 digits</string>
+    <string name="lbl_security_code">Security code</string>
+    <string name="lbl_mmyy">mmyy</string>
+    <string name="lbl_pay">Pay</string>
+    <string name="wifi_plan">Wifi Plan</string>
+    <string name="total_tracker_plan">Total Tracking Plan</string>
+    <string name="total_wifi_plan">Total Wifi Plan</string>
+    <string name="total_sum">Total Price</string>
+    <string name="tracking_plan">Tracking Plan</string>
+    <string name="coolant">Coolant</string>
+    <string name="engine_idle">Engine Idle</string>
+    <string name="engine_health">Engine Health</string>
+    <string name="label_mph">mph</string>
+</resources>

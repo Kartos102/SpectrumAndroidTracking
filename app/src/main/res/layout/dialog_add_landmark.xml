@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color6"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_8"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_8"
+            android:text="Add Landmark"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_5">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="Name"
+                android:textAlignment="textEnd" />
+
+            <EditText
+                android:id="@+id/edt_landmark_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/bg_text_box"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_5">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="Type"
+                android:textAlignment="textEnd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text_box"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_3"
+                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/dimen_5">
+
+                <Spinner
+                    android:id="@+id/spinner_landmark_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_5">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="Longitude"
+                android:textAlignment="textEnd" />
+
+            <EditText
+                android:id="@+id/edit_longitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/bg_text_box"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_5">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:text="Latitude"
+                android:textAlignment="textEnd" />
+
+            <EditText
+                android:id="@+id/edit_latitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/bg_text_box"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="top|bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_5"
+            android:paddingBottom="@dimen/dimen_5">
+
+            <Button
+                android:id="@+id/btn_landmark_ok"
+                style="@style/button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton_green1"
+                android:text="@string/ok" />
+
+            <View
+                android:layout_width="@dimen/dimen_5"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_landmark_cancel"
+                style="@style/button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton_blue1"
+                android:text="@string/btn_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

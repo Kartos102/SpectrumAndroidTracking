@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_speed_bk"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/img_speed_indicator"
+        android:layout_width="match_parent"
+        android:rotation="205"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_speed_indicator"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/txt_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="80"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="@dimen/dimen_10"/>
+
+</RelativeLayout>

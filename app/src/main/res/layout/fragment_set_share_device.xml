@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragment.SetShareDeviceFragment"
+android:orientation="vertical"
+android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dimen_25"
+            android:layout_height="@dimen/dimen_25"
+            android:src="@drawable/ic_navigate_before_white"
+            android:layout_centerVertical="true"
+            android:tint="@color/darkGray"
+            android:layout_marginHorizontal="@dimen/dimen_8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/font_15"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:text="@string/family_circle"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_5"
+        android:text="Here is a list of devices that your friends or family have shared with you. You can slide on to show them on the map or slide off to hide them on the map"
+        android:textColor="@color/table_header_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/label_no_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/no_shared_device"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_tracker_list"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

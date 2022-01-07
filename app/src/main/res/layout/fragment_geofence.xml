@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.GeofenceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_31646">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_up"
+                    android:tint="@color/btn_disabled" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_geofence_right_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="75dp">
+
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            mapbox:mapbox_cameraTargetLat="40.73581"
+            mapbox:mapbox_cameraTargetLng="-73.99155"
+            mapbox:mapbox_cameraZoom="11">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:orientation="vertical">
+
+
+                    <!--  <com.jo.spectrum.view.CompassView
+                        android:layout_width="@dimen/dimen_35"
+                        android:layout_height="@dimen/dimen_35"
+                        android:layout_gravity="center"
+                        android:id="@+id/compass"
+                        />-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.mapbox.mapboxsdk.maps.MapView>
+
+        <LinearLayout
+            android:id="@+id/ll_zoom_geofence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:orientation="vertical">
+
+            <com.jo.spectrumtracking.widget.VerticalSeekBar
+                android:id="@+id/seek_zoom_geofence"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:max="20"
+                android:min="1"
+                android:progress="9"
+                android:progressDrawable="@drawable/seekbar_drawable"
+                android:thumb="@drawable/seekbar_pressed_thumb"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/btn_toggle_basemap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                mapbox:srcCompat="@drawable/ic_satellite1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_new_geofence"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignBottom="@id/ll_zoom_geofence"
+            android:layout_toLeftOf="@id/ll_zoom_geofence"
+            android:layout_marginRight="@dimen/dimen_4"
+            android:src="@drawable/ic_geofence1"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <!--  <LinearLayout
+        android:id="@+id/ll_bottom_btns"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:gravity="center">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ProgressBar
+            android:id="@+id/pbar_loading"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_height="wrap_content"/>
+        &lt;!&ndash;<Button
+            android:id="@+id/btn_options_show_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:paddingLeft="@dimen/dimen_4"
+            android:textColor="#0E2C51"
+            android:background="@drawable/roundedtransbutton"
+
+            android:text="@string/options" />&ndash;&gt;
+    </LinearLayout>-->
+</FrameLayout>

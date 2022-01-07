@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8"
+        card_view:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#9F9F9F"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1.5"
+                    android:text="@string/name"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="12325345345346"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="center|left"
+                    android:text="@string/expiration_date"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_weight="4.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_expiration_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:text="@string/service_plan"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_info2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:background="@drawable/circle_info" />
+
+                <Spinner
+                    android:id="@+id/sp_service_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_weight="4.5"
+                    android:textSize="14sp"
+                    card_view:ms_arrow_tint="@color/main_color_sim"
+                    card_view:ms_background_color="#efeeee"
+                    card_view:ms_hide_arrow="false"
+                    card_view:ms_padding_bottom="@dimen/dimen_5"
+                    card_view:ms_padding_top="@dimen/dimen_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:text="@string/lte_data"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/sp_lte_data"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_weight="4.5"
+                    android:textSize="14sp"
+                    card_view:ms_arrow_tint="@color/main_color_sim"
+                    card_view:ms_background_color="#efeeee"
+                    card_view:ms_hide_arrow="false"
+                    card_view:ms_padding_bottom="@dimen/dimen_5"
+                    card_view:ms_padding_top="@dimen/dimen_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingTop="@dimen/dimen_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.5"
+                    android:gravity="left"
+                    android:text="@string/auto_renew"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/sp_auto_review"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_weight="4.5"
+                    android:textSize="14sp"
+                    card_view:ms_arrow_tint="@color/main_color_sim"
+                    card_view:ms_background_color="#efeeee"
+                    card_view:ms_hide_arrow="false"
+                    card_view:ms_padding_bottom="@dimen/dimen_5"
+                    card_view:ms_padding_top="@dimen/dimen_5" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+</LinearLayout>

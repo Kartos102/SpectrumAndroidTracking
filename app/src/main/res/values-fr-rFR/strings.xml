@@ -1,0 +1,331 @@
+<resources>
+    <string name="app_name">Suivi Du Spectre</string>
+    <string name="welcome_to">Bienvenue À</string>
+    <string name="hint_password">Mot De Passe (Au Moins 8 Caractères</string>
+    <string name="user_password">Mot De Passe</string>
+
+    <string name="copyright">
+           <![CDATA[
+        <p class="">Copyright &commat; 2021 Spectrum Tracking &nbsp;|&nbsp; All rights reserved &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Legal.html">Terms of Service</a></p>
+
+        ]]>
+    </string>
+    <string name="activation_description">
+        <![CDATA[
+                <p>1. Put the <font color="#f96f00">SPECTRUMID</font> into the box below.</p>
+                <p>2. For OBD tracker, plug the tracker into the OBD II port. <a href="https://www.carmd.com/wp/locating-the-obd2-port-or-dlc-locator/" color="#f96f00" style="text-decoration: none;">CLICK HERE</a> to locate OBD port. For portable tracker, fully charge your device for 2-3 hours.</p>
+                <p>3. Drive your car for 5-10 minutes to get GPS location. Portable one can take up to 10 minutes when it is used the first time.\n</p>
+                <p>4. Demo video here <a href="https://spectrumtracking.com/video.html" color="#f96f00" style="text-decoration: none;">CLICK HERE</a> </p>
+
+        ]]>
+    </string>
+    <string name="dialog_activation_success_message_1">
+           <![CDATA[
+                <p>1. Le nom Wi-Fi de votre appareil commence par SMFI</p>
+                <p>2. Le mot de passe WiFi est <b>314159265</b </p>
+                <p>3. Le nom du Wi-Fi ne s affichera pas sans un plan Wi-Fi.</p>
+                <p>4. Vous devez commander un plan WiFi sous Abonnement pour activer le WiFi.</p>
+                <p>5. Lorsque le moteur est éteint, le Wi-Fi est désactivé.</p>
+        ]]>
+    </string>
+    <string name="hint_verify">Code De Réinitialisation Du Mot De Passe</string>
+    <string name="hint_verify_code">Code De Vérification</string>
+    <string name="hint_username">Nom D\'Utilisateur</string>
+    <string name="btn_login">S\'Identifier</string>
+    <string name="btn_google_login">Connexion Google</string>
+    <string name="btn_facebook_login">Identifiant Facebook</string>
+    <string name="register">S\'Inscrire</string>
+    <string name="forgot_password">Mot De Passe Oublié?</string>
+    
+    <string name="hint_first_name">Prénom</string>
+    <string name="hint_last_name">Nom De Famille</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password_confirm">Confirmer Le Nouveau Mot De Passe</string>
+    <string name="btn_register">S\'Inscrire</string>
+    <string name="btn_verify">Soumettre</string>
+    <string name="btn_reset">Réinitialiser Le Mot De Passe</string>
+
+    <string name="back">Retour</string>
+    <string name="request_password">Demande \ Npassword</string>
+    <string name="cancel">Annuler</string>
+    <string name="btn_cancel">Annuler</string>
+    <string name="title_activity_main">Maina C Chity Ty</string>
+
+    <string name="navigation_drawer_open">Ouvrir Le Tiroir De Navigation</string>
+    <string name="navigation_drawer_close">Fermer Le Panneau De Navigation</string>
+
+    <string name="action_settings">Réglages</string>
+
+    
+    <string name="hello_blank_fragment">Bonjour Fragment Vierge</string>
+    <string name="checkout">Check-Out</string>
+    <string name="price">Prix:</string>
+    <string name="per_item">Par Objet</string>
+    <string name="remove">Retirer</string>
+    <string name="tacker_id">Id De Spectre</string>
+    <string name="spectrum_id_4_8_letters">Id De Spectre: 4-8 Lettres De Long</string>
+    <string name="vehicle_name">Nom Du Véhicule</string>
+    <string name="driver_name">Nom Du Conducteur</string>
+    <string name="driver_country">Tracker Location</string>
+    <string name="activate">Activer</string>
+    <string name="service_plan_comment">Tous Les Nouveaux Trackers Incluent Un Service Mensuel Gratuit. Les Plans De Service Peuvent Être Renouvelés 2 Semaines Avant La Date D\'Expiration. Les Données Lte Ne Seront Pas Reportées Sur La Période Suivante.</string>
+    <string name="name">Nom</string>
+    <string name="expiration_date">Expiration</string>
+    <string name="expiration_date_title">Expiration Date</string>
+    <string name="service_plan">Plan De Suivi</string>
+    <string name="lte_data">Texte Et Plan Lte</string>
+    <string name="auto_renew">Renouvellement Automatique</string>
+    <string name="no_auto_renew">No Auto Renew</string>
+    <string name="proceed_to_check_out">Check-Out</string>
+    <string name="title_activity_update_credit_card">Updatecreditcardactivity</string>
+    <string name="update_credit_card">Mettre À Jour La Carte De Crédit</string>
+    <string name="mm_yy">Mm / Aa</string>
+    <string name="title_activity_update_driver_info">Updatedriverinfoactivity</string>
+    <string name="cv_code">Code De Sécurité</string>
+    <string name="card_number">Numéro De Carte</string>
+    <string name="name_on_card">Nom Sur La Carte</string>
+    <string name="update_driver_information">Mettre À Jour Les Informations Du Pilote</string>
+    <string name="driver_name_label">Nom Du Conducteur:</string>
+    <string name="driver_phone_label">Téléphone Du Conducteur:</string>
+    <string name="vehicle_name_label">Nom Du Véhicule:</string>
+    <string name="plate_number_label">Numéro De La Plaque:</string>
+
+    <string name="btn_update">Mise À Jour</string>
+    <string name="forget_password_dialog_header">Entrez Votre Adresse E-Mail Pour Obtenir Le Code De Réinitialisation Du Mot De Passe</string>
+    <string name="before_tax">Avant Impôt</string>
+    <string name="title_activity_checkout">Caisseactivité</string>
+    <string name="place_your_order">Passer Votre Commande</string>
+    <string name="city">Ville</string>
+    <string name="street_address">Adresse De Rue</string>
+    <string name="state">Etat</string>
+    <string name="zip">Code Postal</string>
+    <string name="billing_information">Détails De Facturation</string>
+    <string name="order_summary">Récapitulatif De La Commande</string>
+    <string name="privacy_policy">Politique De Confidentialité</string>
+    <string name="okay">D\'Accord</string>
+    <string name="label_service_plan">Service Plan:</string>
+    <string name="label_lte_plan">Lte Plan:</string>
+    <string name="label_tax">Impôt:</string>
+    <string name="label_total">Total:</string>
+    <string name="label_time">Temps:</string>
+    <string name="activity_label_checkout">Check-Out</string>
+    <string name="options">Sélectionnez Un Véhicule</string>
+    <string name="vehicle">Véhicule</string>
+    <string name="phone">Téléphone</string>
+    <string name="search">Chercher</string>
+    <string name="please_wait">S\'Il Vous Plaît, Attendez</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="load_replay">Charger La Relecture</string>
+    <string name="set_alarm">Régler L\'Alarme</string>
+    <string name="load_report">Rapport</string>
+    <string name="title_activity_shipping_address">Shippingaddressactivity</string>
+    <string name="shipping_address">Adresse De Livraison</string>
+    <string name="email">Email</string>
+    <string name="street_address_lowercase">Adresse De Rue</string>
+    <string name="city_lowercase">Ville</string>
+    <string name="zip_code">Code Postal</string>
+    <string name="state_lowercase">Etat</string>
+    <string name="make_payment">Effectuer Le Paiement</string>
+    <string name="plate_number">Numéro De La Plaque</string>
+    <string name="vehicle_year">Année Du Véhicule</string>
+    <string name="last_online_time">En Ligne</string>
+    <string name="expiration_date_">Expiration</string>
+    <string name="speed">La Vitesse</string>
+    <string name="contact_us">Nous Contacter</string>
+    <string name="contact_mail">Contact@Spectrumtracking.Com</string>
+    <string name="google_api_key">Aizasyatsxpmd58Xr0Ejb4Koiuwfg2T2Pvbes8K</string>
+
+
+    <string-array name="cuntry_arrays"><item>USA</item>
+        <item>Canada or Mexico</item>
+        <item>Other Countries</item>
+    </string-array>
+    <string name="on_the_box">4-8 Lettres De Long</string>
+    <string name="card_expiry">Expiration Date</string>
+    <string name="driver_color_label">Couleur</string>
+    <string name="driver_autorenew_label">Renouvellement Automatique</string>
+    <string name="dialog_activate_success_message">Toutes Nos Félicitations! Votre Tracker Est Maintenant Activé. Veuillez Attendre 5 Minutes Pour Que Le Tracker Démarre. S\'Il N\'Apparaît Pas Sur La Carte, Débranchez Le Tracker Du Port Obd, Puis Rebranchez-Le Pour Réinitialiser L\'Appareil. Contactez Contact@Spectrumtracking.Com Pour Obtenir De L\'Aide.</string>
+    <string name="title_activity_get_photo">Getphotoactivity</string>
+    <string name="gps_is_enabled_required">Le Gps Est Activé (Obligatoire)</string>
+    <string name="location_permission_required">Autorisation De Localisation (Obligatoire)</string>
+    <string name="battery_optimization_is_disabled_optional">L\'Optimisation De La Batterie Est Désactivée (Facultatif)</string>
+    <string name="change_setting">Modifier Les Paramètres</string>
+    <string name="next">Suivant</string>
+    <string name="remember_me">Souviens-Toi De Moi</string>
+    <string name="monitor">Moniteur</string>
+    <string name="replay">Replay</string>
+    <string name="report">Rapport</string>
+    <string name="setting">Réglage</string>
+    <string name="click_disable_battery_optimization_from_previous_panel">Cliquez Sur Désactiver L\'Optimisation De La Batterie Dans Le Panneau Précédent.</string>
+    <string name="tap_not_optimized_dropdown_menu">Appuyez Sur Le Menu Déroulant Non Optimisé.</string>
+    <string name="tap_all_apps">Appuyez Sur Toutes Les Applications.</string>
+    <string name="find_spectrum_tracker_app">Trouvez L\'Application Spectrum Tracker.</string>
+    <string name="turn_off_optimized_switch">Désactivez Le Commutateur Optimisé.</string>
+    <string name="we_recommend_to_turn_off_batter_optimization_for_spectrum_tracking_app_if_you_track_your_phone">Nous Vous Recommandons De Désactiver L\'Optimisation De La Batterie Pour L\'Application Spectrum Tracking Si Vous Suivez Votre Téléphone.</string>
+    <string name="disable_battery_optimization">Désactiver L\'Optimisation De La Batterie</string>
+    <string name="show_me_how">Me Montrer Comment</string>
+    <string name="skip">Sauter</string>
+    <string name="invite_friend_to_chat">Inviter Un Ami À Discuter</string>
+    <string name="log_out">Se Déconnecter</string>
+    <string name="remember_account_on_this_device">Vous Vous Souvenez Du Compte Sur Cet Appareil?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="chat_invitation">Chat Invitation</string>
+    <string name="update_vehicle">Mettre À Jour Le Véhicule</string>
+    <string name="data_plan">Plan De Données</string>
+    <string name="text_alert">Alerte Textuelle</string>
+    <string name="_10_digits_phone_number">Numéro De Téléphone À 10 Chiffres</string>
+    <string name="email_alert">Alerte Par E-Mail</string>
+    <string name="email_address">Adresse E-Mail</string>
+    <string name="sound_alert">Alerte Sonore</string>
+    <string name="vibration_alert">Vibration Alert</string>
+    <string name="save">Sauvegarder</string>
+    <string name="speeding_mph">Excès De Vitesse [Mph]</string>
+    <string name="harsh_turn">Virage Dur</string>
+    <string name="unplug_device">Débranchez L\'Appareil</string>
+    <string name="harsh_accel">Accélération Dure</string>
+    <string name="engine_on">Moteur En Marche</string>
+    <string name="engine_off">Moteur Éteint</string>
+    <string name="geofence">Geofence</string>
+    <string name="airplane_mode">Airplane Mode</string>
+    <string name="invite">Invite</string>
+    <string name="fence_name">Nom De La Clôture</string>
+    <string name="double_click_to_finish_drawing">Double-Cliquez Pour Terminer Le Dessin</string>
+    <string name="draw_geofence">Dessiner Geofence</string>
+    <string name="date">Date</string>
+    <string name="event">Un Événement</string>
+    <string name="address">Adresse</string>
+    <string name="click_here_about_plan_details">Cliquez Ici Pour Les Détails Du Plan</string>
+    <string name="total_stops">Nombre Total D\'Arrêts</string>
+    <string name="mileage">Kilométrage</string>
+    <string name="total_fuel">Carburant Total</string>
+    <string name="average_trip">Trajet Moyen</string>
+    <string name="vehicle_battery">Batterie De Véhicule</string>
+    <string name="idling">Ralenti</string>
+    <string name="max_speed">Vitesse Maximale</string>
+    <string name="slide_on_off_to_show_hide_family_and_friends_location">Faites Glisser Sur Marche / Arrêt Pour Afficher / Masquer L\'Emplacement De La Famille Et Des Amis</string>
+    <string name="no_shared_device">Aucun Appareil Partagé</string>
+    <string name="keep_screen_on">Gardez L\'Écran Allumé</string>
+    <string name="track_my_phone">Suivre Mon Téléphone</string>
+    <string name="time_interval_to_track_phone_s">Intervalle De Temps Pour Suivre Le (S) Téléphone (S)</string>
+    <string name="set_alarms">Définir Des Alarmes</string>
+    <string name="set_geofence">Définir Geofence</string>
+    <string name="order_service">Order Service</string>
+    <string name="faq">Faq</string>
+    <string name="battery_optimisation_settings">Paramètres D\'Optimisation De La Batterie</string>
+    <string name="we_recommend_that_you_turn_off_battery_optimization_for_spectrum_tracking_app_if_you_use_phone_tracking">Nous Vous Recommandons De Désactiver L\'Optimisation De La Batterie Pour L\'Application De Suivi Du Spectre Si Vous Utilisez Le Suivi Du Téléphone</string>
+    <string name="activate_tracker">Activer Tracker</string>
+    <string name="enter_an_email_in_the_box_and_click_the_share_button_to_invite_family_and_friends_to_share_your_location">Entrez Un E-Mail Dans La Boîte Et Cliquez Sur Le Bouton Partager Pour Inviter Votre Famille Et Vos Amis À Partager Votre Position</string>
+    <string name="not_shared_user">Utilisateur Non Partagé</string>
+    <string name="select_all">Tout Sélectionner</string>
+    <string name="ok">D\'Accord</string>
+    <string name="current_weather">Météo Actuelle</string>
+    <string name="temperature">Température</string>
+    <string name="humidity">Humidité</string>
+    <string name="wind">Vent</string>
+    <string name="pressure">Pression</string>
+    <string name="cloudy">Nuageux</string>
+    <string name="click_for_address">Cliquez Pour L\'Adresse</string>
+    <string name="plate">Plate</string>
+    <string name="route">Route</string>
+    <string name="driver">Chauffeur</string>
+    <string name="status">Statut</string>
+    <string name="dataplan">Plan De Données</string>
+    <string name="lte_plan">Lte Plan</string>
+    <string name="expiration">Expiration</string>
+    <string name="autorenew">Autorenew</string>
+    <string name="email_invitation_to_share">Email Invitation To Share</string>
+    <string name="share">Partager</string>
+    <string name="select_users">Sélectionnez Les Utilisateurs</string>
+    <string name="unshare">Annuler Le Partage</string>
+    <string name="day_trip">Excursion D\'Une Journée</string>
+    <string name="month_trip">Voyage D\'Un Mois</string>
+    <string name="year_trip">Voyage D\'Un An</string>
+    <string name="last_start">Dernier Départ</string>
+    <string name="speeding">Excès De Vitesse</string>
+    <string name="rapid_accel">Accélération Rapide</string>
+    <string name="hard_braking">Freinage Dur</string>
+    <string name="last_stop">Dernier Arrêt</string>
+    <string name="alert">Alerte</string>
+    <string name="accept">J\'Accepte</string>
+    <string name="reject">Rejeter</string>
+    <string name="edit_vehicle_info">Modifier Les Informations Du Véhicule</string>
+    <string name="get_there">Y Arriver</string>
+    <string name="share_your_location">Partagez Votre Position</string>
+    <string name="chatting">Bavardage</string>
+    <string name="voltage">Tension</string>
+    <string name="main_events">Main Events</string>
+    <string name="add_device">Ajouter Un Appareil</string>
+    <string name="add_alarm">Ajouter Une Alarme</string>
+    <string name="add_geofence">Ajouter Geofence</string>
+    <string name="subscription">Abonnement</string>
+    <string name="order_tracker">Suivi Des Commandes</string>
+    <string name="family_circle">Cercle Familial</string>
+    <string name="update_device">Mettre À Jour L\'Appareil</string>
+
+    <string-array name="geofence_type"><item>Circle</item>
+        <item>Polygon</item>
+    </string-array>
+
+    <string name="we_need_permissions_access_to_track_you">Nous Avons Besoin D\'Autorisations Pour Vous Suivre, Vous Et Votre Famille</string>
+    <string name="gps_disabled_in_your_device_would_you_like_enable">Le Gps Est Désactivé Sur Votre Appareil. Souhaitez-Vous L\'Activer?</string>
+    <string name="goto_setting_page_to_enable_gps">Accéder À La Page Des Paramètres Pour Activer Le Gps</string>
+    <string name="please_enter_card_name">Veuillez Saisir Le Nom De La Carte</string>
+    <string name="please_enter_card_number">Veuillez Saisir Le Numéro De Carte</string>
+    <string name="please_enter_zip_code">Veuillez Saisir Le Code Postal</string>
+    <string name="please_enter_state">Veuillez Entrer L\'État</string>
+    <string name="please_enter_name">Veuillez Entrer Le Nom</string>
+    <string name="please_enter_expiration_date">Veuillez Saisir La Date D\'Expiration</string>
+    <string name="please_enter_cv_code">Veuillez Saisir Le Code Cv</string>
+    <string name="you_have_successfully_made_paymet">Vous Avez Effectué Le Paiement Avec Succès. La Confirmation A Été Envoyée À Votre Email</string>
+    <string name="weak_cell_signal">Un Signal De Téléphone Portable Faible Est Détecté</string>
+    <string name="please_enter_username">Veuillez Saisir Votre Nom D\'Utilisateur</string>
+    <string name="please_enter_password">Veuillez Entrer Le Mot De Passe</string>
+    <string name="please_enter_first_name">Veuillez Entrer Le Prénom</string>
+    <string name="please_enter_last_name">Veuillez Saisir Votre Nom</string>
+    <string name="please_enter_email">Veuillez Saisir Votre Email</string>
+    <string name="password_confirm_does_not_match">La Confirmation Du Mot De Passe Ne Correspond Pas</string>
+    <string name="press_back_agin_to_exit">Appuyez À Nouveau Sur Retour Pour Quitter</string>
+    <string name="please_enter_verification_code">Veuillez Saisir Le Code De Vérification</string>
+    <string name="reset_password_has_been_successfully">La Réinitialisation Du Mot De Passe A Été Réussie</string>
+    <string name="please_enter_street_address">Veuillez Saisir L\'Adresse Postale</string>
+    <string name="please_enter_city">Veuillez Entrer La Ville</string>
+    <string name="invalid_email_address">Adresse E-Mail Invalide</string>
+    <string name="please_select_user_for_unshare">Veuillez Sélectionner L\'Utilisateur Pour Annuler Le Partage</string>
+    <string name="last_update">Dernière Mise À Jour</string>
+    <string name="please_enter_tracker_id">Veuillez Saisir L\'Identifiant Du Traqueur</string>
+    <string name="please_select_data_plan">Veuillez Sélectionner Un Plan De Données</string>
+    <string name="expiration_date_format_is_wrong">Le Format De La Date D\'Expiration Est Incorrect. Utilisez Mmaa. Par Exemple, Si La Date D\'Expiration Est Décembre 2030, Utilisez 1230</string>
+    <string name="please_choose_vehicle">Veuillez Choisir Le Véhicule</string>
+    <string name="use_valid_email_address">Utilisez Une Adresse E-Mail Valide</string>
+    <string name="success">Succès</string>
+    <string name="successfully_invited_to_join_chat">Invité À Rejoindre Le Chat</string>
+    <string name="stop_drawing">Arrêter Le Dessin</string>
+    <string name="add_new_fence">Ajouter Une Nouvelle Clôture</string>
+    <string name="save_geofence">Enregistrer Geofence</string>
+    <string name="no_data_change_to_another_day">Pas De Données. Changer Pour Un Autre Jour</string>
+    <string name="__want_to_share_this_vehicle_information_with_you">Souhaite Partager Ces Informations Sur Le Véhicule Avec Vous. Voulez-Vous Montrer Ce Véhicule?</string>
+    <string name="your_location_is_invalid">Votre Position N\'Est Pas Valide</string>
+    <string name="update_success">Mise À Jour Réussie</string>
+    <string name="enable_your_gps_to_show_your_location">Activez Votre Gps Pour Afficher Votre Position</string>
+    <string name="note">Note</string>
+    <string name="no_trip_change_to_another_day">Pas De Voyage. Changer Pour Un Autre Jour</string>
+    <string name="no_need_to_do_it_you_already_disabled_it">Pas Besoin De Le Faire, Vous L\'Avez Déjà Désactivé</string>
+    <string name="unshare_success">Annuler Le Partage</string>
+    <string name="retry_your_credit_card_if_still_not_working__">Réessayez Votre Carte De Crédit. Si Cela Ne Fonctionne Toujours Pas, Veuillez Nous Contacter Pour Obtenir De L\'Aide</string>
+    <string name="distance">Distance</string>
+    <string name="this_week">Cette semaine</string>
+    <string name="country">Country</string>
+    <string name="show_legend">SHOW LEGEND</string>
+    <string name="show_info">SHOW INFO</string>
+    <string name="hide_info">HIDE INFO</string>
+    <string name="share_location">Share Location</string>
+    <string name="clear">Clear</string>
+    <string name="circle">Circle</string>
+    <string name="polygon">Polygon</string>
+    <string name="fuel">Fuel</string>
+    <string name="battery">Battery</string>
+    <string name="wifi_data">WiFi Data</string>
+    <string name="rpm">RPM</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_24"
+    tools:context=".activity.BatteryOptimizationDisableActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Hi, we have to make sure that everything we need is okay"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/cbGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/gps_is_enabled_required"
+        android:buttonTint="@color/red_checkbox"/>
+
+    <CheckBox
+        android:id="@+id/cbLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/location_permission_required"
+        android:buttonTint="@color/red_checkbox"/>
+
+    <CheckBox
+        android:id="@+id/cbBattery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/battery_optimization_is_disabled_optional"
+        android:buttonTint="@color/red_checkbox"/>
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roundedbutton_blue"
+        android:enabled="true"
+        android:textColor="@color/card_back"
+        android:text="@string/next"
+        android:textSize="@dimen/dimen_12"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/tvReCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roundedbutton_green"
+        android:enabled="true"
+        android:text="@string/change_setting"
+        android:textSize="@dimen/dimen_12"
+        android:textColor="@color/card_back"
+        android:textAllCaps="false" />
+
+  <!--  <TextView
+        android:id="@+id/tvReCall"
+        android:text="Recall permissions"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+</LinearLayout>

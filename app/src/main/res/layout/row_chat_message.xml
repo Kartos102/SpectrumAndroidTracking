@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/layoutHolder"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginStart="@dimen/dimen_5"
+	android:layout_marginEnd="@dimen/dimen_5"
+	android:layout_marginTop="@dimen/dimen_2"
+	android:layout_marginBottom="@dimen/dimen_2"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/layoutLeft"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dimen_5"
+			android:layout_marginStart="@dimen/dimen_5"
+			android:layout_marginEnd="@dimen/dimen_50"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/txtLeftDate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dimen_2"
+				android:layout_marginStart="@dimen/dimen_3"
+				android:text="-- -- --"
+				android:textSize="@dimen/font_10" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:foreground="?attr/selectableItemBackground"
+				android:background="@drawable/box_chat_left"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/txtLeftMessage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_5"
+					android:layout_marginBottom="@dimen/dimen_5"
+					android:layout_marginStart="@dimen/dimen_10"
+					android:layout_marginEnd="@dimen/dimen_10"
+					android:text="--- ---"
+					android:textSize="@dimen/font_12" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/layoutRight"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<View
+			android:layout_width="@dimen/dimen_50"
+			android:layout_height="@dimen/dimen_10" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/dimen_5"
+			android:layout_gravity="end"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/txtRightDate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dimen_2"
+				android:layout_marginStart="@dimen/dimen_3"
+				android:layout_gravity="end"
+				android:text="-- -- --"
+				android:textSize="@dimen/font_10" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end"
+				android:foreground="?attr/selectableItemBackground"
+				android:background="@drawable/box_chat_right"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/txtRightMessage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end"
+					android:layout_marginTop="@dimen/dimen_5"
+					android:layout_marginBottom="@dimen/dimen_5"
+					android:layout_marginStart="@dimen/dimen_10"
+					android:layout_marginEnd="@dimen/dimen_10"
+					android:text="--- ---"
+					android:textSize="@dimen/font_12" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

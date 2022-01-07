@@ -1,0 +1,221 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    android:background="@null">
+    <ScrollView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_31646">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow_up"
+                    android:tint="@color/btn_disabled" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_monitor_right_options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/monitor_top"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtUnreadCount"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/circle_text_unread"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="95dp"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingTop="@dimen/dimen_1"
+        android:paddingRight="@dimen/dimen_2"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.nitri.gauge.Gauge
+                android:id="@+id/speed_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                gauge:faceColor="@color/anthracite"
+                gauge:lowerText="MPH"
+                gauge:majorNickInterval="20"
+                gauge:maxValue="160"
+                gauge:minValue="0"
+                gauge:needleColor="@color/pieChart7"
+                gauge:scaleColor="@color/white"
+                gauge:totalNicks="200"
+                gauge:upperTextSize="34"
+                gauge:valuePerNick="1" />
+
+            <de.nitri.gauge.Gauge
+                android:id="@+id/rpm_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                gauge:faceColor="@color/anthracite"
+                gauge:lowerText="@string/rpm"
+                gauge:majorNickInterval="10"
+                gauge:maxValue="8"
+                gauge:minValue="0"
+                gauge:needleColor="@color/oldpink"
+                gauge:scaleColor="@color/pieChart7"
+                gauge:totalNicks="100"
+                gauge:upperTextSize="34"
+                gauge:valuePerNick="0.1" />
+
+            <de.nitri.gauge.Gauge
+                android:id="@+id/battery_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                gauge:faceColor="@color/anthracite"
+                gauge:lowerText="Battery"
+                gauge:majorNickInterval="10"
+                gauge:maxValue="100"
+                gauge:minValue="0"
+                gauge:needleColor="@color/white"
+                gauge:scaleColor="@color/oldpink"
+                gauge:totalNicks="120"
+                gauge:upperTextSize="34"
+                gauge:valuePerNick="1" />
+
+            <LinearLayout
+                android:id="@+id/layout_velocityTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/recyclerview_header_velocity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_monitor_velocity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_toggle_velocity"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/btn_show"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/btn_toggle_info"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_expand_top_info_bg"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_toggle_info_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="@string/show_info"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/font_9"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--  <LinearLayout
+          android:visibility="gone"
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="0.2"
+          android:orientation="horizontal"
+          android:layout_gravity="right"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:layout_marginRight="@dimen/dimen_10"
+          android:gravity="center">
+
+          <ProgressBar
+              android:id="@+id/pbar_loading"
+              android:layout_width="wrap_content"
+              android:layout_marginRight="@dimen/dimen_10"
+              android:layout_height="wrap_content"/>
+        <Button
+              android:id="@+id/btn_options_show_hide"
+              style="@style/button1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingRight="@dimen/dimen_4"
+              android:paddingLeft="@dimen/dimen_4"
+              android:textColor="#0E2C51"
+              android:background="@drawable/roundedtransbutton"
+              android:text="@string/options" />
+      </LinearLayout>-->
+
+
+</FrameLayout>

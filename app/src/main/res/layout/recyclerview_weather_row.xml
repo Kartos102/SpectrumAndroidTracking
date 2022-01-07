@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:paddingLeft="@dimen/dimen_5"
+        android:paddingTop="@dimen/dimen_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left|top"
+        android:id="@+id/txt_date"
+        android:textColor="#f96f00"
+        android:text="CURRENT WEATHER"/>
+    <ImageView
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_gravity="center"
+
+        android:id="@+id/img_icon"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:paddingLeft="@dimen/dimen_10"
+        android:id="@+id/txt_temp"
+        android:layout_gravity="center"
+        android:textColor="#f96f00"
+        android:text="35"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingLeft="@dimen/dimen_10"
+        android:id="@+id/txt_humidity"
+        android:layout_gravity="center"
+        android:textColor="#f96f00"
+        android:text="humidity"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_10"
+        android:id="@+id/txt_wind"
+        android:layout_gravity="center"
+        android:textColor="#f96f00"
+        android:text="Wind"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_10"
+        android:id="@+id/txt_pressue"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textColor="#f96f00"
+        android:text="pressue"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dimen_10"
+        android:text="Cloudy"
+        android:textAlignment="center"
+        android:textColor="#f96f00"
+        android:id="@+id/txt_state"/>
+
+</LinearLayout>

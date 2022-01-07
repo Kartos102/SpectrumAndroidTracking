@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_right_option_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_10"
+    android:paddingRight="@dimen/dimen_10">
+
+
+
+    <!--  <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginBottom="@dimen/dimen_10"
+          android:layout_marginTop="@dimen/dimen_10"
+          android:background="@color/gray" />-->
+<!--
+    <include
+        layout="@layout/recyclerview_header_asset_single_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_alarm_right_options"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="@dimen/dimen_10"
+        android:orientation="horizontal">
+        <Button
+            style="@style/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/options"
+            android:layout_weight="0.8"
+            android:background="@drawable/roundedbutton"
+            android:textColor="#0E2C51"
+            android:visibility="invisible" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_set_alarm"
+                style="@style/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dimen_60"
+                android:background="@drawable/roundedbutton"
+                android:textColor="#0E2C51"
+
+                android:text="@string/set_alarm"
+
+                android:layout_gravity="bottom"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

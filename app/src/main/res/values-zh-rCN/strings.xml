@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spectrum Tracker</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="hint_password">密码</string>
+    <string name="user_password">密码</string>
+
+    <string name="hint_verify">Password Reset Code</string>
+    <string name="hint_verify_code">Verification Code</string>
+    <string name="hint_username">邮箱地址</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_google_login">Google login</string>
+    <string name="btn_facebook_login">Facebook login</string>
+    <string name="register">用户注册</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="copyright">
+           <![CDATA[
+        <p class="">版权 &commat; 2021 Spectrum Tracking &nbsp;|&nbsp; 版权所有 &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Privacy.html">隐私政策</a> &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Legal.html">服务条款</a></p>
+
+        ]]>
+    </string>
+    <string name="activation_description">
+           <![CDATA[
+        <p>1. 请将包装盒上的<font color="#f96f00">跟踪器编号</font>输入下面表格.</p>
+        <p>2. 把跟踪器安装到车的OBD <a href="https://www.carmd.com/wp/locating-the-obd2-port-or-dlc-locator/" color="#f96f00" style="text-decoration: none;">点击此处</a>查询OBD位置</p>
+        <p>3. 如果您用的是便携式跟踪器，请先充电三小时</p>
+        <p>4. 演示视频在这里 <a href="https://spectrumtracking.com/video.html" color="#f96f00" style="text-decoration: none;">点击此处</a> </p>
+
+        ]]>
+    </string>
+    <string name="dialog_activation_success_message_1">
+           <![CDATA[
+                <p>1。您设备的WiFi名称以SMFI开头</p>
+                <p>2。 WiFi密码为 <b>314159265</b></p>
+                <p>3。没有WiFi计划，WiFi名称不会显示。</p>
+                <p>4。您必须在“订购”下订购WiFi计划才能激活WiFi。</p>
+                <p>5。引擎关闭时，WiFi关闭。</p>
+        ]]>
+    </string>
+    <string name="hint_first_name">名字</string>
+    <string name="hint_last_name">姓</string>
+    <string name="hint_email">邮箱地址</string>
+    <string name="hint_password_confirm">确认密码</string>
+    <string name="btn_register">用户注册</string>
+    <string name="btn_verify">提交</string>
+    <string name="btn_reset">复位密码</string>
+
+    <string name="back">返回</string>
+    <string name="request_password">"要求密码"</string>
+    <string name="cancel">取消</string>
+    <string name="btn_cancel">取消</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+
+    <string name="action_settings">设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout">"结帐"</string>
+    <string name="price">"价钱:"</string>
+    <string name="per_item">" per item"</string>
+    <string name="remove">去掉</string>
+    <string name="tacker_id">跟踪器编号</string>
+    <string name="spectrum_id_4_8_letters">跟踪器编号: 多4-8字</string>
+    <string name="vehicle_name">车辆名称</string>
+    <string name="driver_name">司机</string>
+    <string name="driver_country">跟踪器位置</string>
+    <string name="activate">激活跟踪器</string>
+    <string name="service_plan_comment">所有新的跟踪器均包括免费的月度服务。服务计划可以在到期日前2周更新。 LTE数据不会延续到下一个周期。</string>
+    <string name="name">名字</string>
+    <string name="expiration_date">有效期</string>
+    <string name="expiration_date_title">有效期 月年</string>
+    <string name="service_plan">追踪计划</string>
+    <string name="lte_data">文字和LTE计划</string>
+    <string name="auto_renew">自动付费</string>
+    <string name="no_auto_renew">不自动付费</string>
+    <string name="proceed_to_check_out">结帐</string>
+    <string name="title_activity_update_credit_card">UpdateCreditCardActivity</string>
+    <string name="update_credit_card">跟新信用卡</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="title_activity_update_driver_info">UpdateDriverInfoActivity</string>
+    <string name="cv_code">安全号</string>
+    <string name="card_number">信用卡号</string>
+    <string name="name_on_card">持卡人姓名</string>
+    <string name="update_driver_information">更新驱动程序信息</string>
+    <string name="driver_name_label">司机: </string>
+    <string name="driver_phone_label">司机手机: </string>
+    <string name="vehicle_name_label">车辆: </string>
+    <string name="plate_number_label">车牌号: </string>
+
+    <string name="btn_update">更新</string>
+    <string name="forget_password_dialog_header">输入您的电子邮件地址以获取密码重置代码</string>
+    <string name="before_tax">Before Tax</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="place_your_order">下订单</string>
+    <string name="city">市</string>
+    <string name="street_address">街道</string>
+    <string name="state">省</string>
+    <string name="zip">Zip</string>
+    <string name="billing_information">账单信息</string>
+    <string name="order_summary">订单摘要</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="okay">好</string>
+    <string name="label_service_plan">服务计划:</string>
+    <string name="label_lte_plan">LTE计划:</string>
+    <string name="label_tax">税:</string>
+    <string name="label_total">总计:</string>
+    <string name="label_time">时间:</string>
+    <string name="activity_label_checkout">结帐</string>
+    <string name="options">选择车辆</string>
+    <string name="vehicle">车辆</string>
+    <string name="phone">手机</string>
+    <string name="search">检索</string>
+    <string name="please_wait">请耐心等待</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="load_replay">载入重播</string>
+    <string name="set_alarm">设定闹钟</string>
+    <string name="load_report">报告</string>
+    <string name="title_activity_shipping_address">ShippingAddressActivity</string>
+    <string name="shipping_address">送货地址</string>
+    <string name="email">电子邮件</string>
+    <string name="street_address_lowercase">街道</string>
+    <string name="city_lowercase">市</string>
+    <string name="zip_code">Zip</string>
+    <string name="state_lowercase">省</string>
+    <string name="make_payment">付款</string>
+    <string name="plate_number">车号</string>
+    <string name="vehicle_year">车辆年份</string>
+    <string name="last_online_time">线上</string>
+    <string name="expiration_date_">有效期 月年</string>
+    <string name="speed">超速</string>
+    <string name="contact_us">联系我们</string>
+    <string name="contact_mail">contact@spectrumtracking.com</string>
+    <string name="google_api_key">AIzaSyAtSXpMD58Xr0ejb4KoiUwFG2T2pvBes8k</string>
+
+
+    <string-array name="cuntry_arrays">
+        <item>美国</item>
+        <item>加拿大或墨西哥</item>
+        <item>其他国家</item>
+    </string-array>
+    <string name="on_the_box">多4-8字</string>
+    <string name="card_expiry">有效期</string>
+    <string name="driver_color_label">颜色</string>
+    <string name="driver_autorenew_label">自动付费</string>
+    <string name="dialog_activate_success_message">恭喜你！您的跟踪器现已激活。请等待5分钟，以使跟踪器启动。如果地图上未显示该设备，请从OBD端口上拔下跟踪器，然后再将其重新插入以重置设备。请联系contact@spectrumtracking.com以获取帮助。</string>
+    <string name="title_activity_get_photo">getPhotoActivity</string>
+    <string name="gps_is_enabled_required">GPS已启用（必须）</string>
+    <string name="location_permission_required">位置许可（必须）</string>
+    <string name="battery_optimization_is_disabled_optional">电池优化已禁用 (可选)</string>
+    <string name="change_setting">修改设置</string>
+    <string name="next">下一走</string>
+    <string name="remember_me">记住密码</string>
+    <string name="monitor">监控</string>
+    <string name="replay">回放</string>
+    <string name="report">报告</string>
+    <string name="setting">系统管理</string>
+    <string name="click_disable_battery_optimization_from_previous_panel">单击上一面板中的禁用电池优化。</string>
+    <string name="tap_not_optimized_dropdown_menu">点击未优化下拉菜单。</string>
+    <string name="tap_all_apps">点按所有应用。</string>
+    <string name="find_spectrum_tracker_app">查找Spectrum Tracker应用程序。</string>
+    <string name="turn_off_optimized_switch">关闭优化开关。</string>
+    <string name="we_recommend_to_turn_off_batter_optimization_for_spectrum_tracking_app_if_you_track_your_phone">如果您跟踪手机，我们建议关闭Spectrum Tracking应用程序的面糊优化。</string>
+    <string name="disable_battery_optimization">禁用电池优化</string>
+    <string name="show_me_how">告诉我如何</string>
+    <string name="skip">跳跃</string>
+    <string name="invite_friend_to_chat">邀请朋友聊天</string>
+    <string name="log_out">退出</string>
+    <string name="remember_account_on_this_device">记住在此设备上的帐户吗？</string>
+    <string name="yes">是</string>
+    <string name="no">不</string>
+    <string name="chat_invitation">聊天邀请</string>
+    <string name="update_vehicle">更新载具</string>
+    <string name="data_plan">流量套餐</string>
+    <string name="text_alert">短信告警</string>
+    <string name="_10_digits_phone_number">手机号码</string>
+    <string name="email_alert">电子邮件告警</string>
+    <string name="email_address">邮箱地址</string>
+    <string name="sound_alert">声音告警</string>
+    <string name="vibration_alert">振动告警</string>
+    <string name="save">保存</string>
+    <string name="speeding_mph">超速[mph]</string>
+    <string name="harsh_turn">急转弯</string>
+    <string name="unplug_device">断电告警</string>
+    <string name="harsh_accel">急加速</string>
+    <string name="engine_on">点火</string>
+    <string name="engine_off">熄火</string>
+    <string name="geofence">虚拟围墙</string>
+    <string name="airplane_mode">飞行模式</string>
+    <string name="invite">邀请</string>
+    <string name="fence_name">围墙名字</string>
+    <string name="double_click_to_finish_drawing">双击完成绘图</string>
+    <string name="draw_geofence">画围墙</string>
+    <string name="date">日期</string>
+    <string name="event">事件</string>
+    <string name="address">地址</string>
+    <string name="click_here_about_plan_details">单击此处了解计划详细信息</string>
+    <string name="total_stops">停车</string>
+    <string name="mileage">里程</string>
+    <string name="total_fuel">油耗</string>
+    <string name="average_trip">平均里程</string>
+    <string name="vehicle_battery">车载电池</string>
+    <string name="idling">停车未熄火</string>
+    <string name="max_speed">最快时速</string>
+    <string name="slide_on_off_to_show_hide_family_and_friends_location">滑动开/关以显示/隐藏家人和朋友的位置</string>
+    <string name="no_shared_device">没有共享设备</string>
+    <string name="keep_screen_on">保持屏幕开启</string>
+    <string name="track_my_phone">追踪我的手机</string>
+    <string name="time_interval_to_track_phone_s">手机追踪间隔</string>
+    <string name="set_alarms">设置闹钟</string>
+    <string name="set_geofence">设置围墙</string>
+    <string name="order_service">订购服务</string>
+    <string name="faq">FAQ</string>
+    <string name="battery_optimisation_settings">电池优化设置</string>
+    <string name="we_recommend_that_you_turn_off_battery_optimization_for_spectrum_tracking_app_if_you_use_phone_tracking">如果您使用电话跟踪，我们建议您关闭频谱跟踪应用程序的电池优化.</string>
+    <string name="activate_tracker">激活跟踪器</string>
+    <string name="enter_an_email_in_the_box_and_click_the_share_button_to_invite_family_and_friends_to_share_your_location">在框中输入电子邮件，然后单击“共享”按钮邀请家人和朋友共享您的位置</string>
+    <string name="not_shared_user">未共享的用户</string>
+    <string name="select_all">全选</string>
+    <string name="ok">好</string>
+    <string name="current_weather">当前天气</string>
+    <string name="temperature">温度</string>
+    <string name="humidity">湿度</string>
+    <string name="wind">风</string>
+    <string name="pressure">压力</string>
+    <string name="cloudy">多云的</string>
+    <string name="click_for_address">点击查看地址</string>
+    <string name="plate">车号</string>
+    <string name="route">路线</string>
+    <string name="driver">司机</string>
+    <string name="status">状态</string>
+    <string name="dataplan">流量套餐</string>
+    <string name="lte_plan">LTE套餐</string>
+    <string name="expiration">有效期</string>
+    <string name="autorenew">自动付费</string>
+    <string name="email_invitation_to_share">电子邮件邀请分享</string>
+    <string name="share">分享</string>
+    <string name="select_users">选择用户</string>
+    <string name="unshare">取消分享</string>
+    <string name="day_trip">当天里程</string>
+    <string name="month_trip">月</string>
+    <string name="year_trip">年</string>
+    <string name="last_start">最后出发</string>
+    <string name="speeding">超速</string>
+    <string name="rapid_accel">急加速</string>
+    <string name="hard_braking">急刹车</string>
+    <string name="last_stop">最后到达</string>
+    <string name="alert">报警</string>
+    <string name="accept">接受</string>
+    <string name="reject">拒绝</string>
+    <string name="edit_vehicle_info">编辑资讯</string>
+    <string name="get_there">到达那里</string>
+    <string name="share_your_location">分享位置</string>
+    <string name="chatting">聊天室</string>
+    <string name="voltage">电压</string>
+    <string name="main_events">主要活动</string>
+    <string name="add_device">添加跟踪器</string>
+    <string name="add_alarm">添加报警</string>
+    <string name="add_geofence">增添围墙</string>
+    <string name="subscription">付费</string>
+    <string name="order_tracker">订单追踪器</string>
+    <string name="family_circle">家庭圈</string>
+    <string name="update_device">跟新车辆</string>
+
+    <string-array name="geofence_type">
+        <item>圆</item>
+        <item>多边形</item>
+    </string-array>
+
+    <string name="we_need_permissions_access_to_track_you">我们需要访问权限才能跟踪您和您的家人</string>
+    <string name="gps_disabled_in_your_device_would_you_like_enable">您的设备已禁用Gps。您要启用它吗？</string>
+    <string name="goto_setting_page_to_enable_gps">转到设置页面以启用Gps</string>
+    <string name="please_enter_card_name">请输入卡名</string>
+    <string name="please_enter_card_number">请输入卡号</string>
+    <string name="please_enter_zip_code">请输入邮政编码</string>
+    <string name="please_enter_state">请输入状态</string>
+    <string name="please_enter_name">请输入姓名</string>
+    <string name="please_enter_expiration_date">请输入有效期</string>
+    <string name="please_enter_cv_code">请输入简历代码</string>
+    <string name="you_have_successfully_made_paymet">您已成功付款。确认已发送至您的电子邮件</string>
+    <string name="weak_cell_signal">检测到手机信号弱</string>
+    <string name="please_enter_username">请输入用户名</string>
+    <string name="please_enter_password">请输入密码</string>
+    <string name="please_enter_first_name">请输入名字</string>
+    <string name="please_enter_last_name">请输入姓氏</string>
+    <string name="please_enter_email">请输入电子邮件</string>
+    <string name="password_confirm_does_not_match">密码确认不匹配</string>
+    <string name="press_back_agin_to_exit">再次按返回退出</string>
+    <string name="please_enter_verification_code">请输入验证码</string>
+    <string name="reset_password_has_been_successfully">重置密码已成功</string>
+    <string name="please_enter_street_address">请输入街道地址</string>
+    <string name="please_enter_city">请输入城市</string>
+    <string name="invalid_email_address">无效的邮件地址</string>
+    <string name="please_select_user_for_unshare">请选择要取消共享的用户</string>
+    <string name="last_update">最后更新</string>
+    <string name="please_enter_tracker_id">请输入追踪器Id</string>
+    <string name="please_select_data_plan">请选择数据套餐</string>
+    <string name="expiration_date_format_is_wrong">到期日期格式错误。使用Mmyy。例如，如果到期日期是2030年12月，则使用1230</string>
+    <string name="please_choose_vehicle">请选择车辆</string>
+    <string name="use_valid_email_address">使用有效的电子邮件地址</string>
+    <string name="success">成功</string>
+    <string name="successfully_invited_to_join_chat">成功邀请加入聊天</string>
+    <string name="stop_drawing">停止绘图</string>
+    <string name="add_new_fence">添加新的围栏</string>
+    <string name="save_geofence">保存地理围栏</string>
+    <string name="no_data_change_to_another_day">没有数据。改天</string>
+    <string name="__want_to_share_this_vehicle_information_with_you">想要与您分享此车辆信息。你想展示这辆车吗？</string>
+    <string name="your_location_is_invalid">您的位置无效</string>
+    <string name="update_success">更新成功</string>
+    <string name="enable_your_gps_to_show_your_location">使您的Gps显示您的位置</string>
+    <string name="note">注意</string>
+    <string name="no_trip_change_to_another_day">不行改天</string>
+    <string name="no_need_to_do_it_you_already_disabled_it">无需这样做，您已经禁用了它</string>
+    <string name="unshare_success">取消分享成功</string>
+    <string name="retry_your_credit_card_if_still_not_working__">重试您的信用卡。如果仍然无法使用，请与我们联系以获取帮助</string>
+    <string name="distance">路程</string>
+    <string name="this_week">本星期</string>
+    <string name="country">Country</string>
+    <string name="show_legend">SHOW LEGEND</string>
+    <string name="show_info">SHOW INFO</string>
+    <string name="hide_info">HIDE INFO</string>
+    <string name="share_location">Share Location</string>
+    <string name="clear">Clear</string>
+    <string name="circle">Circle</string>
+    <string name="polygon">Polygon</string>
+    <string name="fuel">Fuel</string>
+    <string name="battery">Battery</string>
+    <string name="wifi_data">WiFi Data</string>
+    <string name="rpm">RPM</string>
+</resources>

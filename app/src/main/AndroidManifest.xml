@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jo.gps.spectrumtracking">
+
+    <!-- Features -->
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<!--    <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+
+    <application
+        android:name="com.jo.spectrumtracking.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@drawable/ic_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- Google API MetaData-->
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Services -->
+        <!--        <service
+                    android:name=".tracking.GPSTracker"
+                    android:enabled="true"
+                    android:exported="true"
+                    android:foregroundServiceType="location" />-->
+        <service
+            android:name="com.jo.spectrumtracking.tracking.GPSTracker2Plus"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+
+        <service
+            android:name="com.jo.spectrumtracking.services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <!-- Broadcast Receivers-->
+        <receiver
+            android:name="com.jo.spectrumtracking.tracking.Restarter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.jo.spectrumtracking.global.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Activities -->
+        <activity android:name="com.jo.spectrumtracking.activity.BatteryOptimizationDisableActivity" />
+        <activity
+            android:name="com.jo.spectrumtracking.activity.GetPhotoActivity"
+            android:label="@string/title_activity_get_photo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.jo.spectrumtracking.activity.SplashActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.jo.spectrumtracking.activity.IntroActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.jo.spectrumtracking.activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jo.spectrumtracking.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name="com.jo.spectrumtracking.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:permission=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jo.spectrumtracking.activity.CheckoutActivity"
+            android:label="@string/title_activity_checkout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.jo.spectrumtracking.activity.ShippingAddressActivity"
+            android:label="@string/title_activity_shipping_address"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.jo.spectrumtracking.activity.VerificationActivity" />
+        <activity android:name="com.jo.spectrumtracking.activity.ResetPasswordActivity" />
+        <activity android:name="com.jo.spectrumtracking.activity.GoogleSignActivity" />
+    </application>
+
+</manifest>

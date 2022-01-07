@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "632504860109",
+    "firebase_url": "https://spectrum-tracking.firebaseio.com",
+    "project_id": "spectrum-tracking",
+    "storage_bucket": "spectrum-tracking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632504860109:android:dcbaf40a77b001d4c49884",
+        "android_client_info": {
+          "package_name": "com.jo.gps.spectrumtracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632504860109-ro2vl8f495c6orlcnk4bjerentsc0seo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL4VZAucBPk6SipjFNvnz7t7xJwgH2dds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632504860109-1cfr5ok6is1vc5rr6n88pcqs7rcetj7q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "632504860109-r1khlqbbk4fkbfr9kkkaugm9ac2c97nh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jo.spectrum-tracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632504860109:android:6354f8e9e7a53bc7",
+        "android_client_info": {
+          "package_name": "com.jo.spectrum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632504860109-ro2vl8f495c6orlcnk4bjerentsc0seo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL4VZAucBPk6SipjFNvnz7t7xJwgH2dds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632504860109-1cfr5ok6is1vc5rr6n88pcqs7rcetj7q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "632504860109-r1khlqbbk4fkbfr9kkkaugm9ac2c97nh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jo.spectrum-tracker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

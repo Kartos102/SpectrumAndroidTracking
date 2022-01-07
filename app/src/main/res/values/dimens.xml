@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common control size -->
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_9">9dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_21">21dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_23">23dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_31">31dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_33">33dp</dimen>
+    <dimen name="dimen_34">34dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_41">42dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_65">65dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_110">110dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_140">140dp</dimen>
+    <dimen name="dimen_145">145dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_160">160dp</dimen>
+    <dimen name="dimen_180">180dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_210">210dp</dimen>
+    <dimen name="dimen_220">220dp</dimen>
+    <dimen name="dimen_230">230dp</dimen>
+    <dimen name="dimen_240">240dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="dimen_330">340dp</dimen>
+    <dimen name="dimen_350">350dp</dimen>
+    <dimen name="dimen_400">400dp</dimen>
+    <dimen name="dimen_500">500dp</dimen>
+    <dimen name="dimen_600">600dp</dimen>
+    <dimen name="dimen_700">700dp</dimen>
+    <dimen name="dimen_800">800dp</dimen>
+    <dimen name="dimen_900">900dp</dimen>
+    <dimen name="dimen_1000">1000dp</dimen>
+
+
+    <!-- Common font size -->
+    <dimen name="font_1">1sp</dimen>
+    <dimen name="font_2">2sp</dimen>
+    <dimen name="font_3">3sp</dimen>
+    <dimen name="font_4">4sp</dimen>
+    <dimen name="font_5">5sp</dimen>
+    <dimen name="font_6">6sp</dimen>
+    <dimen name="font_7">7sp</dimen>
+    <dimen name="font_8">8sp</dimen>
+    <dimen name="font_9">9sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_11">11sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_13">13sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_34">34sp</dimen>
+    <dimen name="font_45">45sp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_extra_micro">@dimen/font_13</dimen>
+    <dimen name="text_size_micro">@dimen/font_15</dimen>
+    <dimen name="text_size_small">@dimen/font_24</dimen>
+    <dimen name="text_size_medium">@dimen/font_34</dimen>
+    <dimen name="text_size_large">@dimen/font_45</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_top_margin">32dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">140dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- bar chart height -->
+
+    <dimen name="report_bar_chart_height">@dimen/dimen_150</dimen>
+    <dimen name="report_item_image_size">@dimen/dimen_30</dimen>
+    <dimen name="order_tracker_item_image_height">@dimen/dimen_120</dimen>
+    <dimen name="order_service_recycler_width">@dimen/dimen_600</dimen>
+    <dimen name="order_service_item_spinner_height">@dimen/dimen_20</dimen>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color6"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingTop="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_15"
+            android:paddingBottom="@dimen/dimen_5"
+            android:gravity="center"
+            android:text="@string/invite_friend_to_chat"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_invite_chat_share_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/email_invitation_to_share"
+                android:gravity="center"
+                android:inputType="textEmailAddress" />
+            <ImageView
+                android:id="@+id/iv_invite_chat_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_15"
+                android:layout_marginHorizontal="@dimen/dimen_5"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_contact_email"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="top|bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dlg_invite_chat_ok"
+                style="@style/button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton_green1"
+                android:text="@string/invite" />
+
+            <View
+                android:layout_width="@dimen/dimen_5"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_dlg_invite_chat_cancel"
+                style="@style/button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton_blue1"
+                android:text="@string/btn_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

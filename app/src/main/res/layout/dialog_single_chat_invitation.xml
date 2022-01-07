@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="@dimen/dimen_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/chat_invitation"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dlg_chat_invitation_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:text=""
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="top|bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dlg_chat_invitation_accept"
+                style="@style/button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton_blue1"
+                android:text="@string/accept" />
+
+            <View
+                android:layout_width="@dimen/dimen_5"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_dlg_chat_invitation_reject"
+                style="@style/button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_25"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton_gray1"
+                android:text="@string/reject" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

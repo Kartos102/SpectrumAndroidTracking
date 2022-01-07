@@ -1,0 +1,331 @@
+<resources>
+    <string name="app_name">Spectrum Tracker</string>
+    <string name="welcome_to">مرحبا بك في</string>
+    <string name="hint_password">كلمة مرور لا تقل عن 8 أحرف</string>
+    <string name="user_password">كلمه السر</string>
+
+    <string name="copyright">
+           <![CDATA[
+            <p class="">Copyright &commat; 2021 Spectrum Tracking &nbsp;|&nbsp; All rights reserved &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://spectrumtracking.com/Legal.html">Terms of Service</a></p>
+        ]]>
+    </string>
+    <string name="activation_description">
+        <![CDATA[
+        <p>1. Put the <font color="#f96f00">SPECTRUMID</font> into the box below.</p>
+        <p>2. For OBD tracker, plug the tracker into the OBD II port. <a href="https://www.carmd.com/wp/locating-the-obd2-port-or-dlc-locator/" color="#f96f00" style="text-decoration: none;">CLICK HERE</a> to locate OBD port. For portable tracker, fully charge your device for 2-3 hours.</p>
+        <p>3. Drive your car for 5-10 minutes to get GPS location. Portable one can take up to 10 minutes when it is used the first time.\n</p>
+        <p>4. Demo video here <a href="https://spectrumtracking.com/video.html" color="#f96f00" style="text-decoration: none;">CLICK HERE</a> </p>
+        ]]>
+    </string>
+    <string name="dialog_activation_success_message_1">
+           <![CDATA[
+                <p>1. Your device WiFi name starts with SMFI</p>
+                <p>2. WiFi password is <b>314159265</b></p>
+                <p>3. WiFi name will not show without a WiFi plan.</p>
+                <p>4. You must order WiFi plan under Subscription to activate WiFi.</p>
+                <p>5. When engine is off WiFi is off.</p>
+        ]]>
+    </string>
+    <string name="hint_verify">رمز إعادة تعيين كلمة المرور</string>
+    <string name="hint_verify_code">شيفرة التأكيد</string>
+    <string name="hint_username">اسم المستخدم</string>
+    <string name="btn_login">تسجيل الدخول</string>
+    <string name="btn_google_login">تسجيل الدخول إلى Google</string>
+    <string name="btn_facebook_login">تسجيل الدخول الى الفيسبوك</string>
+    <string name="register">تسجيل</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    
+    <string name="hint_first_name">الاسم الاول</string>
+    <string name="hint_last_name">الكنية</string>
+    <string name="hint_email">البريد الإلكتروني</string>
+    <string name="hint_password_confirm">تأكيد كلمة المرور الجديدة</string>
+    <string name="btn_register">تسجيل</string>
+    <string name="btn_verify">إرسال</string>
+    <string name="btn_reset">إعادة تعيين كلمة المرور</string>
+
+    <string name="back">عودة</string>
+    <string name="request_password">طلب \n كلمة المرور</string>
+    <string name="cancel">إلغاء</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="title_activity_main">ماينا ج تشيتي تاي</string>
+
+    <string name="navigation_drawer_open">افتح درج التنقل</string>
+    <string name="navigation_drawer_close">أغلق درج التنقل</string>
+
+    <string name="action_settings">إعدادات</string>
+
+    
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="checkout">الدفع</string>
+    <string name="price">السعر:</string>
+    <string name="per_item">لكل بند</string>
+    <string name="remove">إزالة</string>
+    <string name="tacker_id">معرف الطيف</string>
+    <string name="spectrum_id_4_8_letters">معرف الطيف: 4-8 أحرف طويلة</string>
+    <string name="vehicle_name">اسم السيارة</string>
+    <string name="driver_name">اسم السائق</string>
+    <string name="driver_country">موقع التتبع</string>
+    <string name="activate">تفعيل</string>
+    <string name="service_plan_comment">تتضمن جميع أجهزة التتبع الجديدة خدمة شهرية مجانية. يمكن تجديد خطط الخدمة قبل أسبوعين من تاريخ انتهاء الصلاحية. لن يتم نقل بيانات Lte إلى الفترة التالية.</string>
+    <string name="name">اسم</string>
+    <string name="expiration_date">انتهاء الصلاحية</string>
+    <string name="expiration_date_title">تاريخ إنتهاء الصلاحية</string>
+    <string name="service_plan">خطة التتبع</string>
+    <string name="lte_data">Text And Lte Plan</string>
+    <string name="auto_renew">يجدد ذاتيا</string>
+    <string name="no_auto_renew">No Auto Renew</string>
+    <string name="proceed_to_check_out">الدفع</string>
+    <string name="title_activity_update_credit_card">Updatecreditcardactivity</string>
+    <string name="update_credit_card">تحديث بطاقة الائتمان</string>
+    <string name="mm_yy">شهر / سنة</string>
+    <string name="title_activity_update_driver_info">Updatedriverinfoactivity</string>
+    <string name="cv_code">رمز الحماية</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="name_on_card">الاسم على البطاقة</string>
+    <string name="update_driver_information">تحديث معلومات السائق</string>
+    <string name="driver_name_label">اسم السائق:</string>
+    <string name="driver_phone_label">هاتف السائق:</string>
+    <string name="vehicle_name_label">اسم المركبة:</string>
+    <string name="plate_number_label">رقم لوحة:</string>
+
+    <string name="btn_update">تحديث</string>
+    <string name="forget_password_dialog_header">أدخل عنوان بريدك الإلكتروني للحصول على رمز إعادة تعيين كلمة المرور</string>
+    <string name="before_tax">قبل الضرائب</string>
+    <string name="title_activity_checkout">نشاط الخروج</string>
+    <string name="place_your_order">ضع طلبك</string>
+    <string name="city">مدينة</string>
+    <string name="street_address">عنوان الشارع</string>
+    <string name="state">حالة</string>
+    <string name="zip">الرمز البريدي</string>
+    <string name="billing_information">معلومات الفواتير</string>
+    <string name="order_summary">ملخص الطلب</string>
+    <string name="privacy_policy">سياسة خاصة</string>
+    <string name="okay">حسنا</string>
+    <string name="label_service_plan">خطة الخدمة:</string>
+    <string name="label_lte_plan">خطة Lte:</string>
+    <string name="label_tax">ضريبة:</string>
+    <string name="label_total">مجموع:</string>
+    <string name="label_time">زمن:</string>
+    <string name="activity_label_checkout">الدفع</string>
+    <string name="options">اختر السيارة</string>
+    <string name="vehicle">مركبة</string>
+    <string name="phone">هاتف</string>
+    <string name="search">بحث</string>
+    <string name="please_wait">ارجوك انتظر</string>
+    <string name="start_date">تاريخ البدء</string>
+    <string name="end_date">تاريخ الانتهاء</string>
+    <string name="load_replay">تحميل إعادة</string>
+    <string name="set_alarm">ضبط المنبه</string>
+    <string name="load_report">نقل</string>
+    <string name="title_activity_shipping_address">Shippingaddressactivity</string>
+    <string name="shipping_address">عنوان الشحن</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="street_address_lowercase">عنوان الشارع</string>
+    <string name="city_lowercase">مدينة</string>
+    <string name="zip_code">الرمز البريدي</string>
+    <string name="state_lowercase">حالة</string>
+    <string name="make_payment">قم بالدفع</string>
+    <string name="plate_number">رقم لوحة</string>
+    <string name="vehicle_year">سنة السيارة</string>
+    <string name="last_online_time">عبر الانترنت</string>
+    <string name="expiration_date_">انتهاء الصلاحية</string>
+    <string name="speed">سرعة</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="contact_mail">كونتاكت@سبسترمتركنج.كوم</string>
+    <string name="google_api_key">Aizasyatsxpmd58Xr0Ejb4Koiuwfg2T2Pvbes8K</string>
+
+
+    <string-array name="cuntry_arrays">
+        <item>USA</item>
+        <item>Canada or Mexico</item>
+        <item>Other Countries</item>
+    </string-array>
+    <string name="on_the_box">4-8 أحرف طويلة</string>
+    <string name="card_expiry">تاريخ إنتهاء الصلاحية</string>
+    <string name="driver_color_label">اللون</string>
+    <string name="driver_autorenew_label">يجدد ذاتيا</string>
+    <string name="dialog_activate_success_message">تهانينا! تم تنشيط جهاز التعقب الخاص بك الآن. يرجى الانتظار لمدة 5 دقائق حتى يبدأ المتعقب. إذا لم يظهر على الخريطة ، فافصل جهاز التعقب من منفذ Obd ثم قم بتوصيله مرة أخرى لإعادة ضبط الجهاز. اتصل Contact@Spectrumtracking.Com للحصول على المساعدة.</string>
+    <string name="title_activity_get_photo">Getphotoactivity</string>
+    <string name="gps_is_enabled_required">تم تمكين Gps (مطلوب)</string>
+    <string name="location_permission_required">إذن الموقع (مطلوب)</string>
+    <string name="battery_optimization_is_disabled_optional">تم تعطيل "تحسين البطارية" (اختياري)</string>
+    <string name="change_setting">تغيير الإعدادات</string>
+    <string name="next">التالى</string>
+    <string name="remember_me">تذكرنى</string>
+    <string name="monitor">مراقب</string>
+    <string name="replay">إعادة</string>
+    <string name="report">نقل</string>
+    <string name="setting">ضبط</string>
+    <string name="click_disable_battery_optimization_from_previous_panel">انقر فوق تعطيل تحسين البطارية من اللوحة السابقة.</string>
+    <string name="tap_not_optimized_dropdown_menu">اضغط على القائمة المنسدلة غير المحسّنة.</string>
+    <string name="tap_all_apps">اضغط على كل التطبيقات.</string>
+    <string name="find_spectrum_tracker_app">ابحث عن تطبيق Spectrum Tracker.</string>
+    <string name="turn_off_optimized_switch">إيقاف التبديل الأمثل.</string>
+    <string name="we_recommend_to_turn_off_batter_optimization_for_spectrum_tracking_app_if_you_track_your_phone">نوصي بإيقاف تشغيل تحسين البطارية لتطبيق Spectrum Tracking إذا كنت تتبع هاتفك.</string>
+    <string name="disable_battery_optimization">تعطيل تحسين البطارية</string>
+    <string name="show_me_how">أرني كيف</string>
+    <string name="skip">تخطى</string>
+    <string name="invite_friend_to_chat">قم بدعوة صديق للدردشة</string>
+    <string name="log_out">تسجيل خروج</string>
+    <string name="remember_account_on_this_device">تذكر الحساب على هذا الجهاز؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="chat_invitation">دعوة دردشة</string>
+    <string name="update_vehicle">تحديث السيارة</string>
+    <string name="data_plan">خطة البيانات</string>
+    <string name="text_alert">تنبيه نصي</string>
+    <string name="_10_digits_phone_number">رقم هاتف مكون من 10 أرقام</string>
+    <string name="email_alert">تنبيه عبر البريد الإلكتروني</string>
+    <string name="email_address">عنوان بريد الكتروني</string>
+    <string name="sound_alert">تنبيه صوتي</string>
+    <string name="vibration_alert">تنبيه الاهتزاز</string>
+    <string name="save">حفظ</string>
+    <string name="speeding_mph">السرعة [ميل / ساعة]</string>
+    <string name="harsh_turn">تحول قاسي</string>
+    <string name="unplug_device">افصل الجهاز</string>
+    <string name="harsh_accel">تسريع قاسي</string>
+    <string name="engine_on">المحرك على</string>
+    <string name="engine_off">المحرك توقف</string>
+    <string name="geofence">سياج جغرافي</string>
+    <string name="airplane_mode">وضع الطيران</string>
+    <string name="invite">يدعو</string>
+    <string name="fence_name">اسم السور</string>
+    <string name="double_click_to_finish_drawing">انقر نقرًا مزدوجًا لإنهاء الرسم</string>
+    <string name="draw_geofence">رسم السياج الجغرافي</string>
+    <string name="date">تاريخ</string>
+    <string name="event">حدث</string>
+    <string name="address">عنوان</string>
+    <string name="click_here_about_plan_details">انقر هنا حول تفاصيل الخطة</string>
+    <string name="total_stops">إجمالي التوقفات</string>
+    <string name="mileage">عدد الأميال</string>
+    <string name="total_fuel">إجمالي الوقود</string>
+    <string name="average_trip">متوسط ​​الرحلة</string>
+    <string name="vehicle_battery">بطارية السيارة</string>
+    <string name="idling">تسكع</string>
+    <string name="max_speed">السرعة القصوى</string>
+    <string name="slide_on_off_to_show_hide_family_and_friends_location">الانزلاق على / قبالة لإظهار / إخفاء موقع العائلة والأصدقاء</string>
+    <string name="no_shared_device">لا يوجد جهاز مشترك</string>
+    <string name="keep_screen_on">حافظ على الشاشة قيد التشغيل</string>
+    <string name="track_my_phone">تتبع هاتفي</string>
+    <string name="time_interval_to_track_phone_s">الفاصل الزمني لتتبع الهاتف (الهواتف)</string>
+    <string name="set_alarms">ضبط المنبهات</string>
+    <string name="set_geofence">تعيين Geofence</string>
+    <string name="order_service">طلب الخدمة</string>
+    <string name="faq">التعليمات</string>
+    <string name="battery_optimisation_settings">إعدادات تحسين البطارية</string>
+    <string name="we_recommend_that_you_turn_off_battery_optimization_for_spectrum_tracking_app_if_you_use_phone_tracking">نوصي بإيقاف تشغيل تحسين البطارية لتطبيق تتبع الطيف إذا كنت تستخدم تتبع الهاتف</string>
+    <string name="activate_tracker">تنشيط المقتفي</string>
+    <string name="enter_an_email_in_the_box_and_click_the_share_button_to_invite_family_and_friends_to_share_your_location">أدخل بريدًا إلكترونيًا في المربع وانقر على زر المشاركة لدعوة العائلة والأصدقاء لمشاركة موقعك</string>
+    <string name="not_shared_user">مستخدم غير مشترك</string>
+    <string name="select_all">اختر الكل</string>
+    <string name="ok">حسنا</string>
+    <string name="current_weather">الطقس الحالي</string>
+    <string name="temperature">درجة الحرارة</string>
+    <string name="humidity">رطوبة</string>
+    <string name="wind">ريح</string>
+    <string name="pressure">الضغط</string>
+    <string name="cloudy">غائم</string>
+    <string name="click_for_address">انقر للحصول على العنوان</string>
+    <string name="plate">طبق</string>
+    <string name="route">طريق</string>
+    <string name="driver">سائق</string>
+    <string name="status">الحالة</string>
+    <string name="dataplan">داتابلان</string>
+    <string name="lte_plan">خطة Lte</string>
+    <string name="expiration">انتهاء الصلاحية</string>
+    <string name="autorenew">يجدد ذاتيا</string>
+    <string name="email_invitation_to_share">دعوة بالبريد الإلكتروني للمشاركة</string>
+    <string name="share">شارك</string>
+    <string name="select_users">حدد المستخدمون</string>
+    <string name="unshare">إلغاء المشاركة</string>
+    <string name="day_trip">رحلة نهارية</string>
+    <string name="month_trip">رحلة شهر</string>
+    <string name="year_trip">رحلة العام</string>
+    <string name="last_start">آخر بداية</string>
+    <string name="speeding">مسرعة</string>
+    <string name="rapid_accel">تسريع سريع</string>
+    <string name="hard_braking">الكبح الصعب</string>
+    <string name="last_stop">المحطة الأخيرة</string>
+    <string name="alert">إنذار</string>
+    <string name="accept">قبول</string>
+    <string name="reject">رفض</string>
+    <string name="edit_vehicle_info">تحرير معلومات السيارة</string>
+    <string name="get_there">اذهب هناك</string>
+    <string name="share_your_location">شارك موقعك</string>
+    <string name="chatting">الدردشة</string>
+    <string name="voltage">الجهد االكهربى</string>
+    <string name="main_events">الاحداث الرئيسية</string>
+    <string name="add_device">اضف جهاز</string>
+    <string name="add_alarm">أضف إنذار</string>
+    <string name="add_geofence">أضف Geofence</string>
+    <string name="subscription">الاشتراك</string>
+    <string name="order_tracker">تعقب النظام</string>
+    <string name="family_circle">دائرة الأسرة</string>
+    <string name="update_device">تحديث الجهاز</string>
+
+    <string-array name="geofence_type">
+        <item>Circle</item>
+        <item>Polygon</item>
+    </string-array>
+
+    <string name="we_need_permissions_access_to_track_you">نحتاج إلى أذونات الوصول لتتبعك أنت وعائلتك</string>
+    <string name="gps_disabled_in_your_device_would_you_like_enable">تم تعطيل Gps في جهازك. هل ترغب في تمكينه؟</string>
+    <string name="goto_setting_page_to_enable_gps">انتقل إلى صفحة الإعدادات لتمكين Gps</string>
+    <string name="please_enter_card_name">الرجاء إدخال اسم البطاقة</string>
+    <string name="please_enter_card_number">الرجاء إدخال رقم البطاقة</string>
+    <string name="please_enter_zip_code">الرجاء إدخال الرمز البريدي</string>
+    <string name="please_enter_state">الرجاء إدخال الولاية</string>
+    <string name="please_enter_name">الرجاء إدخال الاسم</string>
+    <string name="please_enter_expiration_date">الرجاء إدخال تاريخ انتهاء الصلاحية</string>
+    <string name="please_enter_cv_code">الرجاء إدخال رمز السيرة الذاتية</string>
+    <string name="you_have_successfully_made_paymet">لقد قمت بالدفع بنجاح. تم إرسال التأكيد إلى بريدك الإلكتروني</string>
+    <string name="weak_cell_signal">تم الكشف عن إشارة الهاتف الخليوي ضعيفة</string>
+    <string name="please_enter_username">الرجاء إدخال اسم المستخدم</string>
+    <string name="please_enter_password">الرجاء إدخال كلمة المرور</string>
+    <string name="please_enter_first_name">الرجاء إدخال الاسم الأول</string>
+    <string name="please_enter_last_name">الرجاء إدخال الاسم الأخير</string>
+    <string name="please_enter_email">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="password_confirm_does_not_match">تأكيد كلمة المرور غير متطابق</string>
+    <string name="press_back_agin_to_exit">اضغط على رجوع مرة أخرى للخروج</string>
+    <string name="please_enter_verification_code">الرجاء إدخال رمز التحقق</string>
+    <string name="reset_password_has_been_successfully">تم إعادة تعيين كلمة المرور بنجاح</string>
+    <string name="please_enter_street_address">الرجاء إدخال عنوان الشارع</string>
+    <string name="please_enter_city">الرجاء إدخال المدينة</string>
+    <string name="invalid_email_address">عنوان البريد الإلكتروني غير صالح</string>
+    <string name="please_select_user_for_unshare">الرجاء تحديد المستخدم لإلغاء المشاركة</string>
+    <string name="last_update">اخر تحديث</string>
+    <string name="please_enter_tracker_id">الرجاء إدخال معرف تعقب</string>
+    <string name="please_select_data_plan">الرجاء تحديد خطة البيانات</string>
+    <string name="expiration_date_format_is_wrong">تنسيق تاريخ انتهاء الصلاحية خاطئ. استخدم Mmyy. على سبيل المثال ، إذا كان تاريخ انتهاء الصلاحية هو ديسمبر 2030 ، فاستخدم 1230</string>
+    <string name="please_choose_vehicle">الرجاء اختيار السيارة</string>
+    <string name="use_valid_email_address">استخدم عنوان بريد إلكتروني صالح</string>
+    <string name="success">نجاح</string>
+    <string name="successfully_invited_to_join_chat">تمت الدعوة بنجاح للانضمام إلى الدردشة</string>
+    <string name="stop_drawing">توقف عن الرسم</string>
+    <string name="add_new_fence">أضف سياجًا جديدًا</string>
+    <string name="save_geofence">حفظ Geofence</string>
+    <string name="no_data_change_to_another_day">لايوجد بيانات. تغيير إلى يوم آخر</string>
+    <string name="__want_to_share_this_vehicle_information_with_you">يريد مشاركة معلومات هذه السيارة معك. هل تريد إظهار هذه السيارة؟</string>
+    <string name="your_location_is_invalid">موقعك غير صالح</string>
+    <string name="update_success">نجاح التحديث</string>
+    <string name="enable_your_gps_to_show_your_location">تمكين Gps الخاص بك لإظهار موقعك</string>
+    <string name="note">ملحوظة</string>
+    <string name="no_trip_change_to_another_day">لا توجد رحلة. تغيير إلى يوم آخر</string>
+    <string name="no_need_to_do_it_you_already_disabled_it">لا حاجة للقيام بذلك ، لقد قمت بتعطيله بالفعل</string>
+    <string name="unshare_success">عدم المشاركة في النجاح</string>
+    <string name="retry_your_credit_card_if_still_not_working__">أعد محاولة بطاقة الائتمان الخاصة بك. إذا كنت لا تزال لا تعمل ، يرجى الاتصال بنا للحصول على المساعدة</string>
+    <string name="distance">مسافة</string>
+    <string name="this_week">هذا الاسبوع</string>
+    <string name="country">Country</string>
+    <string name="show_legend">SHOW LEGEND</string>
+    <string name="show_info">SHOW INFO</string>
+    <string name="hide_info">HIDE INFO</string>
+    <string name="share_location">Share Location</string>
+    <string name="clear">Clear</string>
+    <string name="circle">Circle</string>
+    <string name="polygon">Polygon</string>
+    <string name="fuel">Fuel</string>
+    <string name="battery">Battery</string>
+    <string name="wifi_data">WiFi Data</string>
+    <string name="rpm">RPM</string>
+</resources>

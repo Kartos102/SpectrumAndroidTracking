@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background" android:drawable="@android:color/darker_gray" android:height="12dp" android:gravity="center"/>
+
+    <item android:id="@android:id/progress" android:height="12dp" android:gravity="center">
+        <clip>
+            <color android:color="@android:color/holo_orange_light" />
+        </clip>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress" android:height="12dp" android:gravity="center">
+        <clip>
+            <color android:color="@android:color/holo_green_dark" />
+        </clip>
+    </item>
+
+</layer-list>

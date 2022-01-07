@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dp"
+    android:paddingTop="4dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/textViewGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/darkGray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_textview_draw"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="H"
+        android:textColor="@color/monitor_top"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,292 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jo.spectrumtracking.fragment.ToolsFragment"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dimen_25"
+            android:layout_height="@dimen/dimen_25"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:src="@drawable/ic_navigate_before_white"
+            android:tint="@color/darkGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tools"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/font_15"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginTop="@dimen/dimen_12"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:layout_marginBottom="@dimen/dimen_6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/dimen_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_20"
+                            android:src="@drawable/ic_autolock"
+                            android:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dimen_10"
+                            android:layout_marginVertical="@dimen/dimen_8"
+                            android:layout_weight="1"
+                            android:text="@string/keep_screen_on"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_11" />
+
+                        <com.jo.spectrumtracking.widget.CustomSwitch
+                            android:id="@+id/sAutoLockStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="70dp"
+                            android:theme="@style/myStyle" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:layout_marginBottom="@dimen/dimen_6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/dimen_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_20"
+                            android:src="@drawable/ic_distance_unit"
+                            android:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dimen_10"
+                            android:layout_marginVertical="@dimen/dimen_8"
+                            android:text="Distance Unit"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rb_miles"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/dimen_8"
+                                    android:buttonTint="@color/monitor_top"
+                                    android:checked="true"
+                                    android:text="Miles" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_kilometer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:buttonTint="@color/monitor_top"
+                                    android:text="Kilometer" />
+                            </RadioGroup>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:layout_marginBottom="@dimen/dimen_6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/dimen_8">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_20"
+                            android:src="@drawable/ic_satellite_2"
+                            android:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dimen_10"
+                            android:layout_marginVertical="@dimen/dimen_8"
+                            android:layout_weight="1"
+                            android:text="Satellite Map"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_11" />
+
+                        <com.jo.spectrumtracking.widget.CustomSwitch
+                            android:id="@+id/sSatelliteMap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="70dp"
+                            android:theme="@style/myStyle" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_uploadDelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:layout_marginBottom="@dimen/dimen_6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dimen_8"
+                                android:layout_weight="2"
+                                android:gravity="left"
+                                android:text="@string/time_interval_to_track_phone_s"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/edit_delay"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:text="30"
+                                android:textAlignment="viewEnd" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:layout_marginBottom="@dimen/dimen_6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ic_phonetracking"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/dimen_6"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_phonetracking" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dimen_8"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/track_my_phone"
+                                android:textAlignment="gravity"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <com.jo.spectrumtracking.widget.CustomSwitch
+                                android:id="@+id/sPhoneTrackingStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:minWidth="70dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

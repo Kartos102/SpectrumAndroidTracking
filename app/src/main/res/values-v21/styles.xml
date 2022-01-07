@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="MyRadio" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">#000000</item>
+        <item name="android:colorControlActivated">#000000</item>
+        <item name="android:colorControlHighlight">#000000</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+</resources>

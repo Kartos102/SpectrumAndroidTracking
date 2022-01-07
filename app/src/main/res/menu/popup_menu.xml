@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btn_edit"
+        android:title="@string/edit_vehicle_info" />
+    <item
+        android:id="@+id/btn_route"
+        android:title="@string/get_there" />
+    <item
+        android:id="@+id/btn_share_location"
+        android:title="@string/share_your_location" />
+    <item
+        android:id="@+id/btn_chatting"
+        android:title="@string/chatting" />
+</menu>

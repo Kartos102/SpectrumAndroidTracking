@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jo.spectrumtracking.fragment.ChatRoomListFragment"
+    android:orientation="vertical"
+    android:background="#FFEEF1F2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:src="@drawable/ic_navigate_before_white"
+            android:tint="@color/darkGray" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_invite"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_alignParentRight="false"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:background="@android:color/transparent"-->
+        <!--            android:text="@string/invite"-->
+        <!--            android:textColor="@color/darkGray"-->
+        <!--            android:textSize="@dimen/font_12"-->
+        <!--            android:textStyle="bold" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:text='You can chat with your friends or family members with spectrum tracking app. Click the "Invite" button to send an invitation email. When your friend accept the invitation and register an account you can chat with them'
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_invite"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dimen_40"
+        android:paddingRight="@dimen/dimen_40"
+        android:text="@string/invite"
+        android:textColor="@color/table_header_text_color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginVertical="@dimen/dimen_4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

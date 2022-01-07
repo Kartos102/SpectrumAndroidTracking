@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="color_arrays" >
+        <item>YELLOW</item>
+        <item>WHITE</item>
+        <item>GREY</item>
+        <item>BLACK</item>
+        <item>SILVER</item>
+        <item>BLUE</item>
+        <item>GREEN</item>
+    </string-array>
+    <string-array name="auto_renew_arrays">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="country_name">
+        <item>USA</item>
+        <item>Canada or Mexico</item>
+        <item>Other Countries</item>
+    </string-array>
+    <string-array name="speedRange">
+        <item>0</item>
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>140</item>
+    </string-array>
+    <string-array name="rpmRange">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="temperatureRange">
+        <item>30</item>
+        <item>70</item>
+        <item>100</item>
+        <item>140</item>
+        <item>170</item>
+        <item>210</item>
+    </string-array>
+</resources>
